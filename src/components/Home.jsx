@@ -4,10 +4,10 @@ function Home() {
   return (
     <section className='common-seciton md:w-[90%] lg:w-[80%]'>
         <div className="container flex flex-col-reverse md:flex-row">
-            <div className="left flex-1 text-xs sm:text-sm ">
-                <div className="leading-8"><h1 className='text-xl md:text-2xl lg:text-4xl'>Hey, I am a</h1></div>
+            <div className="left flex-1 text-xs sm:text-sm md:text-base xl:flex-[1.3]">
+                <div className="leading-8"><h1 className='text-xl md:text-2xl lg:text-4xl xl:text-6xl'>Hey, I am a</h1></div>
                 <div className="">
-                    <h1 className='text-xl md:text-2xl lg:text-4xl'>
+                    <h1 className='text-xl md:text-2xl lg:text-4xl xl:text-6xl'>
                     <span style={{color:'rgb(216, 92, 54)'}} className='font-bold'>Full Stack</span>
                      &nbsp;Developer
                     </h1>
