@@ -54,6 +54,11 @@ main {
     }
 }
 
+.icon {
+    transform: translateY(-10px);
+    transition: all .5s ease-in-out;
+}
+
 .common-seciton{
     display: flex;
     position: relative;
