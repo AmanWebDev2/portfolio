@@ -1,6 +1,6 @@
 import React from "react";
 import DownArrow from "../assets/SVG/DownArrow";
-
+import UpArrowSvg from "../assets/SVG/UpArrowSvg";
 function RightBar() {
   return (
     <div className="sidebar-2 z-[-2] lg:border-dashed  w-[14%] sm:w-[8%]  lg:w-[5%] lg:border-l fixed top-0 bottom-0 right-0 flex py-5 mr-2 lg:mr-0">
@@ -14,8 +14,8 @@ function RightBar() {
           </div>
         </div>
         <div className="pagination hidden md:block">
-          <div className="up-arrow"></div>
-          <div className="down-arrow flex justify-center cursor-pointer">
+          <div className="down-arrow flex flex-col space-y-3 justify-center cursor-pointer">
+            <UpArrowSvg styles={{ color: "rgb(216, 92, 54)" }}/>
             <DownArrow styles={{ color: "rgb(216, 92, 54)" }} />
           </div>
         </div>
