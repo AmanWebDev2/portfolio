@@ -1,9 +1,9 @@
 import React, { useEffect, useRef, useState } from 'react'
+import { Link } from 'react-router-dom';
 import AboutSvg from '../assets/SVG/AboutSvg';
 import ContactSvg from '../assets/SVG/ContactSvg';
 import HomeSvg from '../assets/SVG/HomeSvg';
 import SkillSvg from '../assets/SVG/SkillSvg';
-
 function MobileNav() {
     const halfCircleRef = useRef();
     const [pos,setPos] = useState(30);
@@ -56,8 +56,10 @@ function MobileNav() {
       </div>
       <div className="mobile-menu menu-4 w-16 relative text-center cursor-pointer ">
         <div className="contact-icon flex justify-center items-center">
-          <div className="icon-wrapper " >
-          <ContactSvg/>
+          <div className="icon-wrapper">
+            <Link to="/contact">
+              <ContactSvg/>
+            </Link>
           </div>
         </div>
       </div>

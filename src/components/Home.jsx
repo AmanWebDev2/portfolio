@@ -1,5 +1,6 @@
 import React from 'react'
 import { motion } from 'framer-motion'
+import { Link } from 'react-router-dom'
 function Home() {
   return (
     <>
@@ -26,16 +27,20 @@ function Home() {
                 <div className="">
                     <div className="btn-wrapper text-gray-300 flex space-x-4 my-9">
                         <div className="btn-1 py-2  border border-[#D85C36] w-28  md:w-40 text-center cursor-pointer  rounded-lg">
+                            <Link to="/about">
                             <button className=''>
                                 <span className="animate-border"></span>
                                 <span>More About Me</span>
                             </button>
+                            </Link>
                         </div>
                         <div className="btn-2 py-2 border border-[#D85C36] w-28 md:w-40 text-center rounded-lg cursor-pointer">
+                            <Link to="/contact">
                             <button className='relative'>
                                 <span className="animate-border-2"></span>
                                 <span>Contact Us</span>
                             </button>
+                            </Link>
                         </div>
                     </div>
                 </div>
