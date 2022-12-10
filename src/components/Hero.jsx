@@ -9,7 +9,7 @@ function Hero() {
       <>
       <main>
         <div className='  min-w-full min-h-screen'>
-          <div className="sidebar-1 w-[8%] lg:w-[6%] fixed top-0 bottom-0 lg:border-dashed lg:border-r py-5 flex justify-between" >
+          <div className="sidebar-1 w-[8%] lg:w-[5%] fixed top-0 bottom-0 lg:border-dashed lg:border-r py-5 flex justify-between" >
             <div className="container flex flex-col-reverse lg:flex-col justify-between">
               <div className="menu-icon flex flex-col items-center">
                 <div className="menu-wrapper space-y-1 cursor-pointer hidden lg:block">
@@ -27,7 +27,7 @@ function Hero() {
               </div>
             </div>
           </div>
-          <div className="sidebar-2 lg:border-dashed lg:w-[6%] lg:border-l w-[8%] fixed top-0 bottom-0 right-0 flex py-5 mr-2 lg:mr-0">
+          <div className="sidebar-2 lg:border-dashed lg:w-[5%] lg:border-l w-[8%] fixed top-0 bottom-0 right-0 flex py-5 mr-2 lg:mr-0">
             <div className="container flex flex-col justify-between">
               <div className="logo">
                 <div className="logo-wrapper flex justify-center cursor-pointer">
