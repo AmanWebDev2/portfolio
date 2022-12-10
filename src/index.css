@@ -2,16 +2,16 @@
 @tailwind components;
 @tailwind utilities;
 
-*{
-    box-sizing: border-box;
+* {
+  box-sizing: border-box;
 }
 body {
-    background-color: rgb(24, 23, 23);
+  background-color: rgb(24, 23, 23);
 }
 main {
-    height: 100vh;
-    z-index: 100;
-    position: fixed;
+  height: 100vh;
+  z-index: 100;
+  position: fixed;
 }
 
 .tech-icon {
@@ -34,11 +34,11 @@ main {
   border-radius: 6px;
 }
 
-@media only screen and (max-width:1024px) {
-    .m-bar {
-        width: 30px;
-        height: 4px;
-    }
+@media only screen and (max-width: 1024px) {
+  .m-bar {
+    width: 30px;
+    height: 4px;
+  }
 }
 
 .logo-part {
@@ -48,86 +48,154 @@ main {
   color: gainsboro;
 }
 
-@media only screen and (max-width:1024px) {
-    .logo-part  {
-        font-size: 18px;
-    }
+@media only screen and (max-width: 1024px) {
+  .logo-part {
+    font-size: 18px;
+  }
 }
 
 .icon {
-    transform: translateY(-10px);
-    transition: all .5s ease-in-out;
+  transform: translateY(-10px);
+  transition: all 0.5s ease-in-out;
 }
 
-.common-seciton{
-    display: flex;
-    position: relative;
-    box-sizing: border-box;
-    min-height: 100vh;
-    align-items: center;
-    justify-content: center;
-    /* padding: 7.68px 153.6px; */
-    width: 80%;
-    margin: auto;
+.common-seciton {
+  display: flex;
+  position: relative;
+  box-sizing: border-box;
+  min-height: 100vh;
+  align-items: center;
+  justify-content: center;
+  /* padding: 7.68px 153.6px; */
+  width: 80%;
+  margin: auto;
 }
 
 h1 {
-font-size: 3vw;
-font-weight: 600;
-color: rgb(227, 214, 190);
-animation: 1s ease 0.5s 1 normal forwards running animation-in-subTitle;
-text-align: left; 
-text-transform: uppercase;
+  font-size: 3vw;
+  font-weight: 600;
+  color: rgb(227, 214, 190);
+  animation: 1s ease 0.5s 1 normal forwards running animation-in-subTitle;
+  text-align: left;
+  text-transform: uppercase;
 }
-.blurb-wrapper{
-    background-image: url("https://smcreative.studio/smteambg.png");
-object-fit: cover;
-transform-origin: center center 0px;
-background-size: contain;
-background-repeat: no-repeat;
-background-position: center center;
-position: relative;
-height: 100%;
+.blurb-wrapper {
+  background-image: url("https://smcreative.studio/smteambg.png");
+  object-fit: cover;
+  transform-origin: center center 0px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center center;
+  position: relative;
+  height: 100%;
 }
-.blurb-logo{
-    position: relative;
-    background: inherit;
+.blurb-logo {
+  position: relative;
+  background: inherit;
 }
 
-.blurb-logo::before{
-content: "";
-position: absolute;
-top: 0px;
-left: 0px;
-width: 100%;
-height: 100%;
-background-image: url("https://smcreative.studio/smteambg.png");
-object-fit: cover;
-transform-origin: center center 0px;
-background-size: contain;
-background-repeat: no-repeat;
-background-position: center center;
-background-color: rgb(0, 0, 0);
-animation: 4s ease-in-out 1s infinite normal none running imageWaveDesktop;
+.blurb-logo::before {
+  content: "";
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  background-image: url("https://smcreative.studio/smteambg.png");
+  object-fit: cover;
+  transform-origin: center center 0px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-color: rgb(0, 0, 0);
+  animation: 4s ease-in-out 1s infinite normal none running imageWaveDesktop;
 }
 
 @keyframes imageWaveDesktop {
-    0% {
-        border-bottom-left-radius: 10%;
-        border-bottom-right-radius: 50%;
-        border-top-left-radius: 10%;
-        border-top-right-radius: 50%;
-    }
-    50% {
-        border-bottom-left-radius: 100%;
-        border-bottom-right-radius: 10%;
-        border-top-left-radius: 50%;
-        border-top-right-radius: 10%;
-    }
-    100%{
-        border-bottom-left-radius: 10%;
-        border-bottom-right-radius: 50%;    
-        border-top-left-radius: 10%;
-        border-top-right-radius: 50%;
-    }
+  0% {
+    border-bottom-left-radius: 10%;
+    border-bottom-right-radius: 50%;
+    border-top-left-radius: 10%;
+    border-top-right-radius: 50%;
+  }
+  50% {
+    border-bottom-left-radius: 100%;
+    border-bottom-right-radius: 10%;
+    border-top-left-radius: 50%;
+    border-top-right-radius: 10%;
+  }
+  100% {
+    border-bottom-left-radius: 10%;
+    border-bottom-right-radius: 50%;
+    border-top-left-radius: 10%;
+    border-top-right-radius: 50%;
+  }
+}
+
+.animate-border{
+    display: block;
+    position: absolute;
+    list-style: none;
+}
+.animate-border::after{
+    top: 31.76px;
+    right: -31px;
+    width: 38.4px;
+    height: 3.072px;
+    content: "";
+    position: absolute;
+    transform: translateX(20%);
+    background: rgb(11, 11, 11);
+    transition: all 0.5s ease 0s;
+}
+.animate-border::before{
+    top: -9.24px;
+    right: -107px;
+    width: 38.4px;
+    height: 3.072px;
+    content: "";
+    position: absolute;
+    background: rgb(11, 11, 11);
+    transition: all 0.5s ease 0s;
+}
+
+.btn-1:hover .animate-border::before {
+    transform: translateX(-80px);    
+}
+.btn-1:hover .animate-border::after {
+    transform: translateX(87px);    
+}
+
+.animate-border-2{
+    display: block;
+    position: absolute;
+    list-style: none;
+}
+.animate-border-2::after{
+    top: 31.76px;
+    right: -16px;
+    width: 38.4px;
+    height: 3.072px;
+    content: "";
+    position: absolute;
+    transform: translateX(20%);
+    background: rgb(11, 11, 11);
+    transition: all 0.5s ease 0s;
+}
+.animate-border-2::before{
+    top: -9.24px;
+    right: -95px;
+    width: 38.4px;
+    height: 3.072px;
+    content: "";
+    position: absolute;
+    background: rgb(11, 11, 11);
+    transition: all 0.5s ease 0s;
+}
+
+.btn-2:hover .animate-border-2::before {
+    transform: translateX(-80px);    
+}
+.btn-2:hover .animate-border-2::after {
+    transform: translateX(87px);    
 }

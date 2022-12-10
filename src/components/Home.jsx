@@ -16,11 +16,17 @@ function Home() {
                 <div className="text-gray-300 mt-3 lg:mt-4"><p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Inventore laboriosam dignissimos eos rem labore velit sit fuga fugit quam ut. Dolores animi consequatur tempore alias unde laboriosam in consectetur ex modi voluptate, ab veritatis quos ullam suscipit possimus necessitatibus dolore!</p></div>
                 <div className="">
                     <div className="btn-wrapper text-gray-300 flex space-x-4 my-9">
-                        <div className="btn-1 py-2  border w-28  md:w-40 text-center cursor-pointer  rounded-lg">
-                            <button className=''>More About Me</button>
+                        <div className="btn-1 py-2  border border-[#D85C36] w-28  md:w-40 text-center cursor-pointer  rounded-lg">
+                            <button className=''>
+                                <span className="animate-border"></span>
+                                <span>More About Me</span>
+                            </button>
                         </div>
-                        <div className="btn-2 py-2 border w-28 md:w-40 text-center rounded-lg cursor-pointer">
-                            <button className=''>Contact Us</button>
+                        <div className="btn-2 py-2 border border-[#D85C36] w-28 md:w-40 text-center rounded-lg cursor-pointer">
+                            <button className='relative'>
+                                <span className="animate-border-2"></span>
+                                <span>Contact Us</span>
+                            </button>
                         </div>
                     </div>
                 </div>
