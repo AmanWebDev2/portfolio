@@ -11,7 +11,7 @@ function Home() {
       delay: 0.5,
       ease: [0, 0.71, 0.2, 1.01]
     }}
-    className='common-seciton md:w-[90%] lg:w-[80%]'>
+    className='common-seciton lg:w-[80%]'>
         <div className="container flex flex-col-reverse md:flex-row">
             <div className="left flex-1 text-xs sm:text-sm md:text-base xl:flex-[1.3]">
                 <div className="leading-8"><h1 className='text-xl md:text-2xl lg:text-4xl xl:text-6xl'>Hey, I am a</h1></div>

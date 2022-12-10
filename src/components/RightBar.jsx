@@ -14,7 +14,7 @@ function RightBar() {
           </div>
         </div>
         <div className="pagination hidden md:block">
-          <div className="down-arrow flex flex-col space-y-3 justify-center cursor-pointer">
+          <div className="down-arrow flex flex-col space-y-3 justify-center items-center cursor-pointer">
             <UpArrowSvg styles={{ color: "rgb(216, 92, 54)" }}/>
             <DownArrow styles={{ color: "rgb(216, 92, 54)" }} />
           </div>
