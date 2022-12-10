@@ -27,11 +27,18 @@ main {
 }
 
 .m-bar {
-  width: 45px;
-  height: 8px;
+  width: 40px;
+  height: 5px;
   z-index: 1000;
   background: rgb(216, 92, 54);
   border-radius: 6px;
+}
+
+@media only screen and (max-width:1024px) {
+    .m-bar {
+        width: 30px;
+        height: 4px;
+    }
 }
 
 .logo-part {
@@ -40,6 +47,13 @@ main {
   font-weight: 150;
   color: gainsboro;
 }
+
+@media only screen and (max-width:1024px) {
+    .logo-part  {
+        font-size: 18px;
+    }
+}
+
 .common-seciton{
     display: flex;
     position: relative;
@@ -47,7 +61,9 @@ main {
     min-height: 100vh;
     align-items: center;
     justify-content: center;
-    padding: 7.68px 153.6px;
+    /* padding: 7.68px 153.6px; */
+    width: 80%;
+    margin: auto;
 }
 
 h1 {
@@ -58,8 +74,19 @@ animation: 1s ease 0.5s 1 normal forwards running animation-in-subTitle;
 text-align: left; 
 text-transform: uppercase;
 }
+.blurb-wrapper{
+    background-image: url("https://smcreative.studio/smteambg.png");
+object-fit: cover;
+transform-origin: center center 0px;
+background-size: contain;
+background-repeat: no-repeat;
+background-position: center center;
+position: relative;
+height: 100%;
+}
 .blurb-logo{
     position: relative;
+    background: inherit;
 }
 
 .blurb-logo::before{
@@ -76,6 +103,26 @@ background-size: contain;
 background-repeat: no-repeat;
 background-position: center center;
 background-color: rgb(0, 0, 0);
-opacity: 0.5;
 animation: 4s ease-in-out 1s infinite normal none running imageWaveDesktop;
+}
+
+@keyframes imageWaveDesktop {
+    0% {
+        border-bottom-left-radius: 10%;
+        border-bottom-right-radius: 50%;
+        border-top-left-radius: 10%;
+        border-top-right-radius: 50%;
+    }
+    50% {
+        border-bottom-left-radius: 100%;
+        border-bottom-right-radius: 10%;
+        border-top-left-radius: 50%;
+        border-top-right-radius: 10%;
+    }
+    100%{
+        border-bottom-left-radius: 10%;
+        border-bottom-right-radius: 50%;    
+        border-top-left-radius: 10%;
+        border-top-right-radius: 50%;
+    }
 }
