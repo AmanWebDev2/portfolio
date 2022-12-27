@@ -8,6 +8,7 @@
 body {
   background-color: rgb(24, 23, 23);
   overflow: hidden;
+  color: rgb(229 231 235);
 }
 main {
   height: 100vh;
@@ -258,3 +259,36 @@ h1 {
   border-radius: 50%;
 }
 
+.contact-title{
+  position: relative;
+}
+.contact-title::before {
+  content: '';
+  width: 20vmax;
+  height: 1px;
+  background-color: rgb(216, 92, 54);;
+  display: inline-block;
+  vertical-align: middle;
+  margin: 0 12px;
+}
+.contact-title::after {
+  content: '';
+  width: 20vmax;
+  margin: 0 12px;
+  height: 1px;
+  background-color: rgb(216, 92, 54);;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.-icon {
+  width: 32px;
+  height: 32px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.-icon > svg {
+  width: 32px;
+  height: 22px;
+}

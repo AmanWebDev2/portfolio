@@ -3,9 +3,7 @@ import Home from "./Home";
 import MobileNav from "./MobileNav";
 import LeftBar from "./leftBar";
 import RightBar from "./RightBar";
-import CustomPointer from "./CustomPointer";
-import { Outlet, Route, Routes } from "react-router-dom";
-import Contact from "./Contact";
+ 
 function Hero() {
   return (
     <>
