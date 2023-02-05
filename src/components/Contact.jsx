@@ -20,7 +20,7 @@ function Contact() {
     className='common-seciton lg:w-[80%]'>
       <div className="wrapper">
         <div className="title text-center">
-          <div className="contact-title text-xl md:text-2xl text-gray-200">contact us</div>
+          <div className="contact-title text-xl md:text-2xl text-gray-200 uppercase tracking-widest font-semibold">contact us</div>
         </div>
         <div className="container">
           <div className="mt-6 mb-3">
