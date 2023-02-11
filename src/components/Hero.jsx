@@ -3,17 +3,17 @@ import Home from "./Home";
 import MobileNav from "./MobileNav";
 import LeftBar from "./leftBar";
 import RightBar from "./RightBar";
+import { Outlet } from "react-router-dom";
  
 function Hero() {
   return (
     <>
-      <main>
         <div className="  min-w-full min-h-screen">
           <LeftBar />
+          <Outlet/>
           <RightBar />
           <MobileNav />
         </div>
-      </main>
     </>
   );
 }

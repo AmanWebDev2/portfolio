@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import AudioSvg from "../assets/SVG/AudioSvg";
 
 function LeftBar() {
@@ -15,7 +16,9 @@ function LeftBar() {
         <div className="sound-icon">
           <div className="audio-icon-wrapper flex items-center">
             <div className="icon mx-auto cursor-pointer ]">
-              <AudioSvg styles={{ color: "rgb(216, 92, 54)" }} />
+              <Link to="/contact">
+                <AudioSvg styles={{ color: "rgb(216, 92, 54)" }} />
+              </Link>
             </div>
           </div>
         </div>

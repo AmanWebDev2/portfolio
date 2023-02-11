@@ -17,7 +17,7 @@ function MobileNav() {
       const menus = Array.from(document.querySelectorAll('.mobile-menu'));
       menus.forEach((menu)=>{
         menu.addEventListener("click",(e)=>{
-          e.stopImmediatePropagation();
+          // e.stopImmediatePropagation(); // caused problem
           const clickedNode = e.currentTarget;
           const iconNode = clickedNode.firstElementChild;
           removeClassList(menus);
@@ -28,11 +28,12 @@ function MobileNav() {
       })
     }, [])
   return (
-    <div className="bottom-menu z-[-1] fixed bottom-0 right-0 left-0 px-4 text-gray-100 rounded-tl-xl rounded-tr-xl bg-[#D85C36] md:hidden">
+    <div className="bottom-menu z-[50] fixed bottom-0 right-0 left-0 px-4 text-gray-100 rounded-tl-xl rounded-tr-xl bg-[#D85C36] md:hidden">
     <div className="menu-wrapper flex items-center justify-between p-3">
     <div className="current-page fixed bottom-8 left-0 right-0 h-10">
         <div style={{transform:`translateX(${pos}px)`}} ref={halfCircleRef} className="half-circle absolute w-16 h-16 rounded-full bg-[#D85C36] ease-out duration-300" step="1"></div>
       </div>
+      <Link to="/">
       <div className="mobile-menu menu-1 w-16 relative text-center cursor-pointer ">
         <div className="home-icon ease-out duration-300">
         <div className="icon-wrapper flex justify-center items-center">
@@ -40,6 +41,7 @@ function MobileNav() {
           </div>
         </div>
       </div>
+      </Link>
       <div className="mobile-menu menu-2 w-16 relative text-center cursor-pointer ">
         <div className="about-icon ease-out duration-300">
           <div className="icon-wrapper flex justify-center items-center">
