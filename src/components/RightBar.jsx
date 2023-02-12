@@ -3,7 +3,7 @@ import DownArrow from "../assets/SVG/DownArrow";
 import UpArrowSvg from "../assets/SVG/UpArrowSvg";
 function RightBar() {
   return (
-    <div className="sidebar-2 z-[-2] lg:border-dashed  w-[14%] sm:w-[8%]  lg:w-[5%] lg:border-l fixed top-0 bottom-0 right-0 flex py-5 mr-2 lg:mr-0">
+    <div className="sidebar-2 z-50 lg:border-dashed  w-[14%] sm:w-[8%]  lg:w-[5%] lg:border-l fixed top-0 bottom-0 right-0 flex py-5 mr-2 lg:mr-0">
       <div className="container flex flex-col justify-between">
         <div className="logo">
           <div className="logo-wrapper flex justify-center cursor-pointer">

@@ -8,7 +8,7 @@ import { Outlet } from "react-router-dom";
 function Hero() {
   return (
     <>
-        <div className="  min-w-full min-h-screen">
+        <div className="flex items-center justify-items-center min-w-full min-h-screen">
           <LeftBar />
           <Outlet/>
           <RightBar />

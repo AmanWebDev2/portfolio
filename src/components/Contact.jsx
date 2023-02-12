@@ -66,7 +66,7 @@ function Contact() {
               </div>
               {/*  */}
               <div className="flex flex-col wrapper">
-                <div className="flex items-center justify-center sm:w-52 sm:mx-auto space-x-2">
+                <div className="flex items-center justify-center sm:w-52 sm:mx-auto sm:pr-8 space-x-2">
                   <div className="-icon">
                     <MailSvg/>
                   </div>
