@@ -338,7 +338,7 @@ h1 {
 }
 
 .general-details {
-  width: 155px;
+  width: -webkit-fill-available;
   border: 1px solid rgba(165, 161, 161, 0.18);
   height: 105px;
   margin: 0px;

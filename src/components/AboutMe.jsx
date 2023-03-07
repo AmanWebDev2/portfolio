@@ -23,7 +23,7 @@ function About() {
       >
         <div className="wrapper">
           <PageHeadline headline="about me" />
-          <div className="container mx-auto lg:w-1/2 text-xs sm:text-sm md:text-base">
+          <div className="container mx-auto lg:w-4/5 text-xs sm:text-sm md:text-base">
             <div className="mt-6 mb-3">
               <div className="">
                 <div className="sub-title">
