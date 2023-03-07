@@ -6,6 +6,16 @@
 * {
   box-sizing: border-box;
 }
+::-webkit-scrollbar {
+  border-radius: 10px;
+  width: 5px;
+}
+::-webkit-scrollbar-thumb {
+  background: #d85c36;
+}
+::-webkit-scrollbar-track {
+  background: #888;
+}
 body {
   background-color: rgb(24, 23, 23);
   overflow: hidden;
