@@ -11,7 +11,7 @@ const RightBar = React.lazy(()=>import('./RightBar'));
 function Hero() {
   return (
     <>
-        <div className="flex items-center justify-items-center max-w-full max-h-screen overflow-auto ">
+        <div className="flex items-center justify-items-center max-w-full overflow-auto" style={{height:'100vh'}}>
         <Suspense fallback={<div>Loading...</div>}>
           <LeftBar />
         </Suspense>
