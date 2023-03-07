@@ -324,6 +324,19 @@ h1 {
     /* z-index: 100; */
 }
 
+.general-details-wrapper {
+  display: grid;
+  place-items: center;
+  gap: 16px 8px;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+@media screen and (max-width:600px) {
+  .general-details-wrapper {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
 .general-details {
   width: 155px;
   border: 1px solid rgba(165, 161, 161, 0.18);
