@@ -8,6 +8,9 @@ import LocationSvg from "../assets/SVG/LocationSvg";
 import PageHeadline from "./PageHeadline";
 import LinkedInSvg from "../assets/SVG/LinkedInSvg";
 import EmployeeIcon from "../assets/SVG/EmployeeIcon";
+import ReactImg from "../assets/react.svg";
+import NodeImg from "../assets/tech-icons/node-js.svg";
+
 function About() {
   return (
     <>
@@ -43,11 +46,11 @@ function About() {
                 </div>
               </div>
             </div>
-            <div className="wrapper my-14">
+            <div className="wrapper mb-28 mt-10">
               <div className="general-details-wrapper">
                 <div className="general-details">
                   <div className="detail-icon">
-                    <EmployeeIcon styles={{scale:'0.8'}}/>
+                    <EmployeeIcon styles={{ scale: "0.8" }} />
                   </div>
                   <div className="details">
                     <h3>Employees</h3>
@@ -56,7 +59,7 @@ function About() {
                 </div>
                 <div className="general-details md:w-[]">
                   <div className="detail-icon">
-                    <EmployeeIcon styles={{scale:'0.8'}}/>
+                    <EmployeeIcon styles={{ scale: "0.8" }} />
                   </div>
                   <div className="details">
                     <h3>Employees</h3>
@@ -65,7 +68,7 @@ function About() {
                 </div>
                 <div className="general-details">
                   <div className="detail-icon">
-                    <EmployeeIcon styles={{scale:'0.8'}}/>
+                    <EmployeeIcon styles={{ scale: "0.8" }} />
                   </div>
                   <div className="details">
                     <h3>Employees</h3>
@@ -74,7 +77,7 @@ function About() {
                 </div>
                 <div className="general-details">
                   <div className="detail-icon">
-                    <EmployeeIcon styles={{scale:'0.8'}}/>
+                    <EmployeeIcon styles={{ scale: "0.8" }} />
                   </div>
                   <div className="details">
                     <h3>Employees</h3>
@@ -83,7 +86,7 @@ function About() {
                 </div>
                 <div className="general-details">
                   <div className="detail-icon">
-                    <EmployeeIcon styles={{scale:'0.8'}}/>
+                    <EmployeeIcon styles={{ scale: "0.8" }} />
                   </div>
                   <div className="details">
                     <h3>Employees</h3>
@@ -92,11 +95,93 @@ function About() {
                 </div>
                 <div className="general-details">
                   <div className="detail-icon">
-                    <EmployeeIcon styles={{scale:'0.8'}}/>
+                    <EmployeeIcon styles={{ scale: "0.8" }} />
                   </div>
                   <div className="details">
                     <h3>Employees</h3>
                     <p>2 Heros</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            {/* Technologies */}
+            <PageHeadline headline="technologies" />
+            <div className="wrapper mt-10 mb-28">
+              <div className="general-details-wrapper">
+                <div className="general-details">
+                  <div className="detail-icon">
+                    <img src={ReactImg} alt="" srcset="" />
+                  </div>
+                  <div className="details">
+                    <p>React Js</p>
+                  </div>
+                </div>
+                <div className="general-details md:w-[]">
+                  <div className="detail-icon">
+                    {/* <EmployeeIcon styles={{scale:'0.8'}}/> */}
+                    <img src={NodeImg} alt="" srcset="" />
+                    {/* <NodeImg/> */}
+                  </div>
+                  <div className="details">
+                    <p>Express Js</p>
+                  </div>
+                </div>
+                <div className="general-details">
+                  <div className="detail-icon">
+                    <EmployeeIcon styles={{ scale: "0.8" }} />
+                  </div>
+                  <div className="details">
+                    <p>MongoDb</p>
+                  </div>
+                </div>
+                <div className="general-details">
+                  <div className="detail-icon">
+                    <EmployeeIcon styles={{ scale: "0.8" }} />
+                  </div>
+                  <div className="details">
+                    <p>MySQL</p>
+                  </div>
+                </div>
+                <div className="general-details">
+                  <div className="detail-icon">
+                    <EmployeeIcon styles={{ scale: "0.8" }} />
+                  </div>
+                  <div className="details">
+                    <h3>Employees</h3>
+                    <p>2 Heros</p>
+                  </div>
+                </div>
+                <div className="general-details">
+                  <div className="detail-icon">
+                    <EmployeeIcon styles={{ scale: "0.8" }} />
+                  </div>
+                  <div className="details">
+                    <h3>Employees</h3>
+                    <p>2 Heros</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            {/* Services */}
+            <PageHeadline headline="services" />
+            <div className="wrapper mt-10 mb-28">
+              <div className="general-details-wrapper">
+                <div className="general-details">
+                  <div className="detail-icon">
+                    <img src={ReactImg} alt="" srcset="" />
+                  </div>
+                  <div className="details">
+                    <h3>Front-End Development</h3>
+                    <p>React Js</p>
+                  </div>
+                </div>
+                <div className="general-details md:w-[]">
+                  <div className="detail-icon">
+                    <img src={NodeImg} alt="" srcset="" />
+                  </div>
+                  <div className="details">
+                    <h3>Back-End Development</h3>
+                    <p>React Js</p>
                   </div>
                 </div>
               </div>
