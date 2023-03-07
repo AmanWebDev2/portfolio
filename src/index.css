@@ -75,6 +75,7 @@ main {
   /* padding: 7.68px 153.6px; */
   width: 80%;
   margin: auto;
+  /* align-items:flex-start; */
 }
 
 h1 {
@@ -305,6 +306,23 @@ h1 {
     top: -40px;
     left: -65px;
     /* z-index: 100; */
+}
+
+.general-details {
+  width: 155px;
+  border: 1px solid rgba(165, 161, 161, 0.18);
+  height: 105px;
+  margin: 0px;
+  display: flex;
+  padding: 5px;
+  background: rgba(100, 100, 100, 0.1);
+  align-items: center;
+  border-radius: 4.488px;
+  flex-direction: column;
+  text-transform: capitalize;
+  backdrop-filter: blur(1px);
+  justify-content: space-around;
+  text-align: center;
 }
 
 @keyframes menu-animate {

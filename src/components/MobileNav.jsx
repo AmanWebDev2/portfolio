@@ -42,6 +42,7 @@ function MobileNav() {
         </div>
       </div>
       </Link>
+      <Link to="/about">
       <div className="mobile-menu menu-2 w-16 relative text-center cursor-pointer ">
         <div className="about-icon ease-out duration-300">
           <div className="icon-wrapper flex justify-center items-center">
@@ -49,6 +50,7 @@ function MobileNav() {
           </div>
         </div>
       </div>
+      </Link>
       <div className="mobile-menu menu-3 w-16 relative text-center cursor-pointer ">
         <div className="skills-icon ease-out duration-300">
           <div className="icon-wrapper flex justify-center items-center">

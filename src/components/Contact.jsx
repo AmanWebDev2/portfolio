@@ -6,6 +6,7 @@ import PhoneSvg from '../assets/SVG/PhoneSvg'
 import LinkedInSvg from '../assets/SVG/LinkedInSvg'
 import InstaSvg from '../assets/SVG/InstaSvg'
 import MailSvg from '../assets/SVG/MailSvg'
+import PageHeadline from './PageHeadline'
 function Contact() {
   return (
     <>
@@ -19,9 +20,7 @@ function Contact() {
     }}
     className='common-seciton lg:w-[80%]'>
       <div className="wrapper">
-        <div className="title text-center">
-          <div className="contact-title text-xl md:text-2xl text-gray-200 uppercase tracking-widest font-semibold">contact us</div>
-        </div>
+        <PageHeadline headline="contact us" />
         <div className="container">
           <div className="mt-6 mb-3">
             <div className="">
