@@ -64,7 +64,7 @@ function Home() {
             </div>
           </div>
           <div className="right flex flex-1 items-center justify-center">
-            <div className="blurb-wrapper">
+            <div className="">
               <div className="blurb-logo h-1/2 w-1/2 bg-slate-200 "></div>
               blur
             </div>

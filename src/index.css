@@ -126,7 +126,7 @@ h1 {
     border-top-right-radius: 50%;
   }
   50% {
-    border-bottom-left-radius: 100%;
+    border-bottom-left-radius: 90%;
     border-bottom-right-radius: 10%;
     border-top-left-radius: 50%;
     border-top-right-radius: 10%;

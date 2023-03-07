@@ -18,7 +18,7 @@ function Contact() {
       delay: 0.5,
       ease: [0, 0.71, 0.2, 1.01]
     }}
-    className='common-seciton lg:w-[80%]'>
+    className='common-seciton lg:w-[80%] text-xs sm:text-sm md:text-base'>
       <div className="wrapper">
         <PageHeadline headline="contact us" />
         <div className="container">
