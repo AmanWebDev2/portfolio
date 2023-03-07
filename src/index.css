@@ -58,7 +58,7 @@ main {
 }
 
 .logo-part {
-  font-size: 1.5rem;
+  /* font-size: 1.5rem; */
   font-style: normal;
   font-weight: 150;
   color: gainsboro;
