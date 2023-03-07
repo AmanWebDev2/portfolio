@@ -15,7 +15,7 @@ function LeftBar() {
         </div>
         <div className="sound-icon">
           <div className="audio-icon-wrapper flex items-center">
-            <div className="icon mx-auto cursor-pointer">
+            <div className="transition mx-auto cursor-pointer">
               <Link to="/contact">
                 <AudioSvg styles={{ color: "rgb(216, 92, 54)" }} />
               </Link>

@@ -44,7 +44,7 @@ function About() {
               </div>
             </div>
             <div className="wrapper my-14">
-              <div className="grid  grid-cols-3 gap-4  place-items-center ">
+              <div className="grid  sm:grid-cols-3 gap-4  place-items-center ">
                 <div className="general-details">
                   <div className="detail-icon">
                     <EmployeeIcon styles={{scale:'0.8'}}/>
