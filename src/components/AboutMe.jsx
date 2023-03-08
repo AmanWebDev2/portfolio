@@ -10,13 +10,13 @@ import LinkedInSvg from "../assets/SVG/LinkedInSvg";
 import EmployeeIcon from "../assets/SVG/EmployeeIcon";
 import ReactImg from "../assets/react.svg";
 import NodeImg from "../assets/tech-icons/node-js.svg";
-
+import CodeSvg from "../assets/SVG/CodeSvg";
+import StarSvg from "../assets/SVG/StarSvg";
+import CalendarSvg from "../assets/SVG/CalendarSvg";
 function About() {
   return (
     <>
-      <section
-        className="common-seciton lg:w-[80%]"
-      >
+      <section className="common-seciton lg:w-[80%]">
         <div className="wrapper overflow-y-auto overflow-x-hidden">
           <PageHeadline headline="about me" />
           <div className="container mx-auto lg:w-4/5 text-xs sm:text-sm md:text-base">
@@ -52,47 +52,47 @@ function About() {
                 </div>
                 <div className="general-details md:w-[]">
                   <div className="detail-icon">
-                    <EmployeeIcon styles={{ scale: "0.8" }} />
+                    <StarSvg styles={{ scale: "0.8" }} />
                   </div>
                   <div className="details">
-                    <h3>Employees</h3>
-                    <p>2 Heros</p>
+                    <h3>Active Projects</h3>
+                    <p>1 project</p>
                   </div>
                 </div>
                 <div className="general-details">
                   <div className="detail-icon">
-                    <EmployeeIcon styles={{ scale: "0.8" }} />
+                    <MailSvg styles={{ scale: "0.8" }}/>
                   </div>
                   <div className="details">
-                    <h3>Employees</h3>
-                    <p>2 Heros</p>
+                    <h3>Email</h3>
+                    <p>webdevaman2@gmail.com</p>
                   </div>
                 </div>
                 <div className="general-details">
                   <div className="detail-icon">
-                    <EmployeeIcon styles={{ scale: "0.8" }} />
+                    <PhoneSvg styles={{ scale: "0.8" }} />
                   </div>
                   <div className="details">
-                    <h3>Employees</h3>
-                    <p>2 Heros</p>
+                    <h3>Phone</h3>
+                    <p>+91 9458163496</p>
                   </div>
                 </div>
                 <div className="general-details">
                   <div className="detail-icon">
-                    <EmployeeIcon styles={{ scale: "0.8" }} />
+                    <LocationSvg styles={{ scale: "0.8" }} />
                   </div>
                   <div className="details">
-                    <h3>Employees</h3>
-                    <p>2 Heros</p>
+                    <h3>Location</h3>
+                    <p>Dehradun,India</p>
                   </div>
                 </div>
                 <div className="general-details">
                   <div className="detail-icon">
-                    <EmployeeIcon styles={{ scale: "0.8" }} />
+                    <CalendarSvg styles={{ scale: "0.8" }} />
                   </div>
                   <div className="details">
-                    <h3>Employees</h3>
-                    <p>2 Heros</p>
+                    <h3>Since</h3>
+                    <p>2020</p>
                   </div>
                 </div>
               </div>
@@ -159,22 +159,28 @@ function About() {
             <PageHeadline headline="services" />
             <div className="wrapper mt-10 mb-28">
               <div className="service general-details-wrapper">
-                <div className="general-details">
+                <div className="general-details h-[170px] md:h-[210px]">
                   <div className="detail-icon">
                     <img src={ReactImg} alt="" srcset="" />
                   </div>
                   <div className="details">
-                    <h3>Front-End Development</h3>
-                    <p>React Js</p>
+                    <h3 className="font-bold mb-4">Front-End Development</h3>
+                    <p>
+                      Using the world's latest technologies of the day for your
+                      product's client side, such as React.Js or Next.Js
+                    </p>
                   </div>
                 </div>
-                <div className="general-details md:w-[]">
+                <div className="general-details h-[170px] md:h-[210px]">
                   <div className="detail-icon">
-                    <img src={NodeImg} alt="" srcset="" />
+                    <CodeSvg/>
                   </div>
                   <div className="details">
-                    <h3>Back-End Development</h3>
-                    <p>React Js</p>
+                    <h3 className="font-bold mb-4">Back-End Development</h3>
+                    <p>
+                      Using the world's latest technologies of the day for your
+                      product's server side, such as Node.Js.
+                    </p>
                   </div>
                 </div>
               </div>
