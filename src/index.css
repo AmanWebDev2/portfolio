@@ -1,5 +1,4 @@
-
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,300;0,400;0,500;1,100;1,300;1,500&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,300;0,400;0,500;1,100;1,300;1,500&display=swap");
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -20,7 +19,7 @@ body {
   background-color: rgb(24, 23, 23);
   overflow: hidden;
   color: rgb(229 231 235);
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   /* letter-spacing: 2px; */
   /* word-spacing: 2px; */
 }
@@ -249,20 +248,19 @@ h1 {
   .btn-1:hover .animate-border::after {
     transform: translateX(55px);
   }
-
 }
 
 .box {
   width: 30px;
   height: 30px;
-  background:transparent;
+  background: transparent;
   border-radius: 50%;
   border: 2px solid rgb(216, 92, 54);
   position: relative;
   z-index: -3;
 }
 .box::after {
-  content: '';
+  content: "";
   width: 10px;
   height: 10px;
   display: block;
@@ -270,7 +268,7 @@ h1 {
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%,-50%);
+  transform: translate(-50%, -50%);
   border-radius: 50%;
 }
 
@@ -280,26 +278,30 @@ h1 {
   }
 } */
 
-.contact-title{
+.contact-title {
   position: relative;
 }
 .contact-title::before {
-  content: '';
-  width: 20vmin;
+  content: "";
+  /* width: 20vmin; */
   height: 1px;
-  background-color: rgb(216, 92, 54);;
+  background-color: rgb(216, 92, 54);
   display: inline-block;
   vertical-align: middle;
   margin: 0 12px;
+  max-width: 95px;
+  width: 50px;
 }
 .contact-title::after {
-  content: '';
-  width: 20vmin;
+  content: "";
+  /* width: 20vmin; */
   margin: 0 12px;
   height: 1px;
-  background-color: rgb(216, 92, 54);;
+  background-color: rgb(216, 92, 54);
   display: inline-block;
   vertical-align: middle;
+  max-width: 95px;
+  width: 50px;
 }
 
 .-icon {
@@ -315,13 +317,13 @@ h1 {
 }
 
 .menu {
-  animation:0.9s ease 0s 1 normal forwards running menu-animate;
+  animation: 0.9s ease 0s 1 normal forwards running menu-animate;
   transform: rotate(41deg) translateY(-10.1952px);
-    border-radius: 50%;
-    background-color: rgb(254, 153, 74);
-    top: -40px;
-    left: -65px;
-    /* z-index: 100; */
+  border-radius: 50%;
+  background-color: rgb(254, 153, 74);
+  top: -40px;
+  left: -65px;
+  /* z-index: 100; */
 }
 
 .general-details-wrapper {
@@ -331,7 +333,7 @@ h1 {
   grid-template-columns: 1fr 1fr 1fr;
 }
 
-@media screen and (max-width:600px) {
+@media screen and (max-width: 600px) {
   .general-details-wrapper {
     grid-template-columns: 1fr 1fr;
   }
