@@ -43,55 +43,55 @@ function About() {
               <div className="general-details-wrapper">
                 <div className="general-details">
                   <div className="detail-icon">
-                    <EmployeeIcon styles={{ scale: "0.8" }} />
+                    <EmployeeIcon styles={{ scale: "0.8",color:'#d85c36' }} />
                   </div>
                   <div className="details">
-                    <h3>Employees</h3>
+                    <h3 className="font-medium mb-2">Employees</h3>
                     <p>2 Heros</p>
                   </div>
                 </div>
                 <div className="general-details md:w-[]">
                   <div className="detail-icon">
-                    <StarSvg styles={{ scale: "0.8" }} />
+                    <StarSvg styles={{ scale: "0.8",color:'#d85c36' }} />
                   </div>
                   <div className="details">
-                    <h3>Active Projects</h3>
+                    <h3 className="font-medium mb-2">Active Projects</h3>
                     <p>1 project</p>
                   </div>
                 </div>
                 <div className="general-details">
                   <div className="detail-icon">
-                    <MailSvg styles={{ scale: "0.8" }}/>
+                    <MailSvg styles={{ scale: "0.8",color:'#d85c36' }}/>
                   </div>
                   <div className="details">
-                    <h3>Email</h3>
-                    <p>webdevaman2@gmail.com</p>
+                    <h3 className="font-medium mb-2">Email</h3>
+                    <p className="lowercase">webdevaman2@gmail.com</p>
                   </div>
                 </div>
                 <div className="general-details">
                   <div className="detail-icon">
-                    <PhoneSvg styles={{ scale: "0.8" }} />
+                    <PhoneSvg styles={{ scale: "0.8",color:'#d85c36' }} />
                   </div>
                   <div className="details">
-                    <h3>Phone</h3>
+                    <h3 className="font-medium mb-2">Phone</h3>
                     <p>+91 9458163496</p>
                   </div>
                 </div>
                 <div className="general-details">
                   <div className="detail-icon">
-                    <LocationSvg styles={{ scale: "0.8" }} />
+                    <LocationSvg styles={{ scale: "0.8",color:'#d85c36' }} />
                   </div>
                   <div className="details">
-                    <h3>Location</h3>
+                    <h3 className="font-medium mb-2">Location</h3>
                     <p>Dehradun,India</p>
                   </div>
                 </div>
                 <div className="general-details">
                   <div className="detail-icon">
-                    <CalendarSvg styles={{ scale: "0.8" }} />
+                    <CalendarSvg styles={{ scale: "0.8",color:'#d85c36' }} />
                   </div>
                   <div className="details">
-                    <h3>Since</h3>
+                    <h3 className="font-medium mb-2">Since</h3>
                     <p>2020</p>
                   </div>
                 </div>
