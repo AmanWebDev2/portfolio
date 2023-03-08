@@ -23,6 +23,9 @@ body {
   /* letter-spacing: 2px; */
   /* word-spacing: 2px; */
 }
+img{
+  width: 45px;
+}
 main {
   height: 100vh;
   z-index: 100;

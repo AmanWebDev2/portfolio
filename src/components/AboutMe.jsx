@@ -13,6 +13,12 @@ import NodeImg from "../assets/tech-icons/node-js.svg";
 import CodeSvg from "../assets/SVG/CodeSvg";
 import StarSvg from "../assets/SVG/StarSvg";
 import CalendarSvg from "../assets/SVG/CalendarSvg";
+import MongoDb from "../assets/tech-icons/MongoDbSvg";
+import Sqlite from "../assets/tech-icons/Sqlite";
+import NodeJs from "../assets/tech-icons/NodeJs";
+import { SpringBootSvg } from "../assets/tech-icons/SpringBootSvg";
+import Tailwind from "../assets/tech-icons/Tailwind";
+
 function About() {
   return (
     <>
@@ -111,9 +117,8 @@ function About() {
                 </div>
                 <div className="general-details md:w-[]">
                   <div className="detail-icon">
-                    {/* <EmployeeIcon styles={{scale:'0.8'}}/> */}
-                    <img src={NodeImg} alt="" srcset="" />
-                    {/* <NodeImg/> */}
+                    {/* <NodeImg styles={{scale:'0.8'}}/> */}
+                    <img src={NodeImg} alt="" />
                   </div>
                   <div className="details">
                     <p>Express Js</p>
@@ -121,7 +126,7 @@ function About() {
                 </div>
                 <div className="general-details">
                   <div className="detail-icon">
-                    <EmployeeIcon styles={{ scale: "0.8" }} />
+                  <MongoDb styles={{scale:'0.8',width:'50px'}}/>
                   </div>
                   <div className="details">
                     <p>MongoDb</p>
@@ -129,28 +134,26 @@ function About() {
                 </div>
                 <div className="general-details">
                   <div className="detail-icon">
-                    <EmployeeIcon styles={{ scale: "0.8" }} />
+                    <Sqlite styles={{ scale: "0.8",width:'50px'}} />
                   </div>
                   <div className="details">
                     <p>MySQL</p>
                   </div>
                 </div>
-                <div className="general-details">
+                <div className="general-details blur-sm	">
                   <div className="detail-icon">
-                    <EmployeeIcon styles={{ scale: "0.8" }} />
+                    <SpringBootSvg styles={{ scale: "0.8",width:'50px' }} />
                   </div>
                   <div className="details">
-                    <h3>Employees</h3>
-                    <p>2 Heros</p>
+                    <p>Spring Boot</p>
                   </div>
                 </div>
                 <div className="general-details">
                   <div className="detail-icon">
-                    <EmployeeIcon styles={{ scale: "0.8" }} />
+                    <Tailwind styles={{ scale: "0.8",width:'50px' }} />
                   </div>
                   <div className="details">
-                    <h3>Employees</h3>
-                    <p>2 Heros</p>
+                    <p>Tailwind Css</p>
                   </div>
                 </div>
               </div>
