@@ -165,7 +165,7 @@ function About() {
             {/* Services */}
             <PageHeadline headline="services" />
             <div className="wrapper mt-10 mb-28">
-              <div className="general-details-wrapper">
+              <div className="service general-details-wrapper">
                 <div className="general-details">
                   <div className="detail-icon">
                     <img src={ReactImg} alt="" srcset="" />
