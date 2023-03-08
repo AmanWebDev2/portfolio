@@ -10,14 +10,7 @@ import PageHeadline from './PageHeadline'
 function Contact() {
   return (
     <>
-    <motion.section 
-    initial={{ opacity: 0, scale: 0.7 }}
-    animate={{ opacity: 1, scale: 1 }}
-    transition={{
-      duration: 0.8,
-      delay: 0.5,
-      ease: [0, 0.71, 0.2, 1.01]
-    }}
+    <section 
     className='common-seciton lg:w-[80%] text-xs sm:text-sm md:text-base'>
       <div className="wrapper translate-y-[-85px]">
         <PageHeadline headline="contact us" />
@@ -78,7 +71,7 @@ function Contact() {
           </div>
         </div>
       </div>
-    </motion.section>
+    </section>
     </>
   )
 }

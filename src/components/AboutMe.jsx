@@ -14,14 +14,7 @@ import NodeImg from "../assets/tech-icons/node-js.svg";
 function About() {
   return (
     <>
-      <motion.section
-        initial={{ opacity: 0, scale: 0.7 }}
-        animate={{ opacity: 1, scale: 1 }}
-        transition={{
-          duration: 0.8,
-          delay: 0.5,
-          ease: [0, 0.71, 0.2, 1.01],
-        }}
+      <section
         className="common-seciton lg:w-[80%]"
       >
         <div className="wrapper overflow-y-auto overflow-x-hidden">
@@ -188,7 +181,7 @@ function About() {
             </div>
           </div>
         </div>
-      </motion.section>
+      </section>
     </>
   );
 }

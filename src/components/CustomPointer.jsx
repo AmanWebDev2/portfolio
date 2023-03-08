@@ -12,7 +12,6 @@ function CustomPointer() {
         animate={{ x, y }}
         transition={{
           type: "spring",
-
         }}
       />
     );

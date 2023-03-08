@@ -4,14 +4,7 @@ import { Link } from "react-router-dom";
 function Home() {
   return (
     <>
-      <motion.section
-        initial={{ opacity: 0, scale: 0.7 }}
-        animate={{ opacity: 1, scale: 1 }}
-        transition={{
-          duration: 0.4,
-          delay: 0.2,
-          ease: [0, 0.71, 0.2, 1.01],
-        }}
+      <section
         className="common-seciton lg:w-[80%]"
       >
         <div className="container flex flex-col-reverse md:flex-row">
@@ -70,7 +63,7 @@ function Home() {
             </div>
           </div>
         </div>
-      </motion.section>
+      </section>
     </>
   );
 }

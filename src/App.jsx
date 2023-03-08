@@ -10,18 +10,29 @@ function App() {
   const [showPointer,setShowPointer] = useState(()=>window.innerWidth > 500);
 
   useEffect(()=>{
-    window.addEventListener('resize',()=>{
+    const handleResize=()=>{
       if(window.innerWidth > 500) {
         setShowPointer(true);
       }else {
         setShowPointer(false);
       }
-    });
+    }
+    const handleScroll=()=>{
+      // if(showPointer) {
+      //   setShowPointer(false);
+      // }else{
+      //   setShowPointer(true);
+      // }
+    }
+    window.addEventListener('resize',handleResize);
+    window.addEventListener('scroll',handleScroll);
+    return()=>{
+      window.removeEventListener('resize',handleResize);
+    }
   },[]);
 
   return (
     <>
-    { showPointer && <CustomPointer/>}
     {/* <Hero/> */}
     <Routes>
         <Route exact path="/" element={
