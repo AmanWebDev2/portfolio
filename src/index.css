@@ -378,3 +378,27 @@ h1 {
     height: 400px;
   }
 }
+
+.nav-menu-wrapper {
+  border-radius: 100%;
+    width: 300px;
+    height: 300px;
+    position: fixed;
+    top: -65px;
+    left: -40px;
+    background-color: rgb(254, 153, 74);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: -1;
+    transition: all 0.9s;
+    animation: 0.9s ease 0s 1 normal forwards running menu-animate;
+}
+.nav-menu-wrapper.hide{
+  display: none;
+}
+
+.active {
+  font-size: 18px;
+  color: rgb(235, 227, 213);
+}

@@ -1,16 +1,50 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import AudioSvg from "../assets/SVG/AudioSvg";
+import { useLocation } from 'react-router-dom';
 
 function LeftBar() {
+  const location = useLocation();
+  const [activePage,setActivePage] = useState('/');
+
+  function handleMenuClick(e){
+    const elm = e.currentTarget;
+    if(elm && elm.lastElementChild && elm.lastElementChild.classList.contains('nav-menu-wrapper')) {
+      elm.lastElementChild.classList.toggle('hide')
+    }
+  }
+
+  useEffect(()=>{
+    if(location.pathname) {
+      console.log(location.pathname)
+      setActivePage(location.pathname.toLowerCase());
+    }
+  },[location])
+
   return (
     <div className="sidebar-1 z-50 w-[14%] sm:w-[8%] lg:w-[5%] fixed top-0 bottom-0 left-0 lg:border-dashed lg:border-r py-5 flex justify-between">
       <div className="container flex flex-col-reverse md:flex-col justify-between">
         <div className="menu-icon flex flex-col items-center">
-          <div className="menu-wrapper space-y-1 cursor-pointer hidden md:block">
+          <div className="menu-wrapper space-y-1 cursor-pointer hidden md:block" onClick={handleMenuClick}>
             <div className=" m-bar"></div>
             <div className=" m-bar"></div>
             <div className=" m-bar"></div>
+            <div className="nav-menu-wrapper hide fixed">
+              <div className="flex flex-col w-48 items-center gap-4	justify-center relative top-[20px] font-medium" style={{color:'rgb(227, 214, 190)'}}>
+                <Link to='/'>
+                <span className={`${activePage==='/' && 'active'}`}>Home</span>
+                </Link>
+                <Link to='/about'>
+                <span className={`${activePage==='/about' && 'active'}`}>About</span>
+                </Link>
+                <Link to='/portfolio'>
+                <span className={`${activePage==='/portfolio' && 'active'}`}>Portfolio</span>
+                </Link>
+                <Link to='/contact'>
+                <span className={`${activePage==='/contact' && 'active'}`}>Contact</span>
+                </Link>
+              </div>
+            </div>
           </div>
         </div>
         <div className="sound-icon">
