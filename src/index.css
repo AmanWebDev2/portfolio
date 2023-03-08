@@ -381,24 +381,64 @@ h1 {
 
 .nav-menu-wrapper {
   border-radius: 100%;
-    width: 300px;
-    height: 300px;
-    position: fixed;
-    top: -65px;
-    left: -40px;
-    background-color: rgb(254, 153, 74);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    z-index: -1;
-    transition: all 0.9s;
-    animation: 0.9s ease 0s 1 normal forwards running menu-animate;
+  width: 300px;
+  height: 300px;
+  position: fixed;
+  top: -65px;
+  left: -40px;
+  background-color: rgb(254, 153, 74);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: -1;
+  transition: all 0.9s;
+  animation: 0.9s ease 0s 1 normal forwards running menu-animate;
 }
-.nav-menu-wrapper.hide{
+.nav-menu-wrapper.hide {
   display: none;
 }
 
 .active {
   font-size: 18px;
   color: rgb(235, 227, 213);
+}
+.line:nth-child(1) {
+  animation: 0.8s ease-in-out 0s 1 normal forwards running firstChildRotateLg;
+}
+.line:nth-child(2) {
+  animation: 0.8s ease 0s 1 normal forwards running secondChild;
+}
+.line:nth-child(3) {
+  animation: 0.8s ease-in-out 0s 1 normal forwards running lastChildRotate;
+}
+
+@keyframes firstChildRotateLg {
+  0% {
+    transform: translateY(0px);
+  }
+  60% {
+    transform: translateY(9px);
+  }
+  100% {
+    transform: translateY(11px) rotate(45deg);
+  }
+}
+@keyframes secondChild {
+  0%{
+    opacity: 1;
+  }
+  100%{
+    opacity: 0;
+  }
+}
+@keyframes lastChildRotate {
+  0% {
+    transform: translateY(0px);
+  }
+  20% {
+    transform: translateY(-4.3584px);
+  }
+  100% {
+    transform: translateY(-4.3584px) rotate(-45deg);
+  }
 }

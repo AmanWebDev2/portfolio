@@ -6,12 +6,10 @@ import { useLocation } from 'react-router-dom';
 function LeftBar() {
   const location = useLocation();
   const [activePage,setActivePage] = useState('/');
+  const [showMenu,setShowMenu] = useState(false);
 
-  function handleMenuClick(e){
-    const elm = e.currentTarget;
-    if(elm && elm.lastElementChild && elm.lastElementChild.classList.contains('nav-menu-wrapper')) {
-      elm.lastElementChild.classList.toggle('hide')
-    }
+  function handleMenuClick(){
+    setShowMenu(!showMenu);
   }
 
   useEffect(()=>{
@@ -26,10 +24,10 @@ function LeftBar() {
       <div className="container flex flex-col-reverse md:flex-col justify-between">
         <div className="menu-icon flex flex-col items-center">
           <div className="menu-wrapper space-y-1 cursor-pointer hidden md:block" onClick={handleMenuClick}>
-            <div className=" m-bar"></div>
-            <div className=" m-bar"></div>
-            <div className=" m-bar"></div>
-            <div className="nav-menu-wrapper hide fixed">
+            <div className= {`m-bar ${showMenu && 'line'}`} ></div>
+            <div className= {`m-bar ${showMenu && 'line'}`} ></div>
+            <div className= {`m-bar ${showMenu && 'line'}`} ></div>
+            {showMenu && <div className="nav-menu-wrapper fixed">
               <div className="flex flex-col w-48 items-center gap-4	justify-center relative top-[20px] font-medium" style={{color:'rgb(227, 214, 190)'}}>
                 <Link to='/'>
                 <span className={`${activePage==='/' && 'active'}`}>Home</span>
@@ -44,7 +42,7 @@ function LeftBar() {
                 <span className={`${activePage==='/contact' && 'active'}`}>Contact</span>
                 </Link>
               </div>
-            </div>
+            </div>}
           </div>
         </div>
         <div className="sound-icon">
