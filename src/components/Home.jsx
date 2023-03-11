@@ -54,10 +54,17 @@ function Home() {
               </div>
             </div>
           </div>
-          <div className="right flex flex-1 items-center justify-center">
+          <div className="right flex flex-1 items-center justify-center mb-10">
             <div className="">
-              <div className="blurb-logo h-1/2 w-1/2 bg-slate-200 "></div>
-              blur
+              <div className="blurb-logo h-1/2 ">
+              <div className="blurb__bg-wrapper">
+                  <div className="blurb__bg-img-wrapper">
+                    <div className="blurb__bg-img"></div>
+                    <div className="empty"></div>
+                  </div>
+                </div>
+              </div>
+            
             </div>
           </div>
         </div>
