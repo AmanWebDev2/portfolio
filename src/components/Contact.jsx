@@ -18,7 +18,7 @@ function Contact() {
           <div className="mt-6 mb-3">
             <div className="">
               <div className="sub-title">
-                <h6 className='text-center'>Wanna discuss? let's talk and keep in touch..!</h6>
+                <h6 className='text-center contact__title'>Wanna discuss? let's talk and keep in touch..!</h6>
               </div>
             </div>
           </div>
@@ -30,13 +30,13 @@ function Contact() {
               <div className="flex flex-col sm:flex-row wrapper">
                 <div className="flex items-center sm:w-52 space-x-2">
                   <div className="-icon">
-                    <LocationSvg/>
+                    <LocationSvg styles={{fill:'#d85c36'}}/>
                   </div>
                   <p>India</p>
                 </div>
                 <div className="flex items-center sm:w-52 space-x-2">
                   <div className="-icon">
-                    <PhoneSvg/>
+                    <PhoneSvg styles={{fill:'#d85c36'}}/>
                   </div>
                   <p>+91-9458163496</p>
                 </div>
@@ -45,13 +45,13 @@ function Contact() {
               <div className="flex flex-col sm:flex-row wrapper">
                 <div className="flex items-center sm:w-52  space-x-2">
                   <div className="-icon">
-                    <LinkedInSvg/>
+                    <LinkedInSvg styles={{fill:'#d85c36'}}/>
                   </div>
                   <p>Aman</p>
                 </div>
                 <div className="flex items-center sm:w-52 space-x-2">
                   <div className="-icon">
-                    <InstaSvg/>
+                    <InstaSvg styles={{fill:'#d85c36'}}/>
                   </div>
                   <p>aman_dev</p>
                 </div>
@@ -60,7 +60,7 @@ function Contact() {
               <div className="flex flex-col wrapper">
                 <div className="flex items-center justify-center sm:w-52 sm:mx-auto sm:pr-8 space-x-2">
                   <div className="-icon">
-                    <MailSvg/>
+                    <MailSvg styles={{fill:'#d85c36'}}/>
                   </div>
                   <p>webdevaman2@gmail.com</p>
                 </div>

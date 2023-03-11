@@ -487,5 +487,12 @@ h1 {
 }
 
 .about__services {
-  color: #E3D6BE;
+  color: #e3d6be;
+}
+
+.about__para-info::first-letter,.contact__title::first-letter {
+  color: rgb(216, 92, 54);
+  font-size: 22px;
+  font-weight: 700;
+  text-transform: uppercase;
 }

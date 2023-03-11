@@ -29,7 +29,7 @@ function About() {
             <div className="mt-6 mb-3">
               <div className="">
                 <div className="sub-title">
-                  <p className="about__para">
+                  <p className="about__para about__para-info">
                     Lorem ipsum, dolor sit amet consectetur adipisicing elit.
                     Perspiciatis nobis animi maiores, voluptatum, ducimus
                     laudantium nemo, aliquid recusandae placeat similique saepe
