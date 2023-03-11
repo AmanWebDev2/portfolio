@@ -484,7 +484,21 @@ h1 {
   padding: 1.944px 5.0544px;
   margin-bottom: 0px;
   margin-top: 5.832px;
+  visibility: hidden;
 }
+
+.about__title {
+  text-align: justify;
+  hyphens: auto;
+  word-spacing: -0.05em;
+  color: rgb(227, 214, 190);
+  font-weight: 400;
+  padding: 1.944px 5.0544px;
+  margin-bottom: 0px;
+  margin-top: 5.832px;
+  animation: 1s ease 0.8s 1 normal forwards running animation-in-titleSm-about;
+  visibility: hidden;
+} 
 
 .about__services {
   color: #e3d6be;
@@ -582,6 +596,37 @@ h1 {
   100% {
     visibility: visible;
     transform: translateY(0px);
-    display: none;
+    display: block;
   }
 }
+@keyframes animation-in-desc-about {
+  0% {
+    display: none;
+    visibility: hidden;
+    transform: translateY(400px);
+  }
+  50% {
+    visibility: hidden;
+  }
+  100% {
+    visibility: visible;
+    transform: translateY(0px);
+    display: block;
+  }
+}
+@keyframes animation-in-titleSm-about {
+  0% {
+    display: none;
+    visibility: hidden;
+    transform: translateY(-80px);
+}
+  50% {
+    visibility: hidden;
+  }
+  100% {
+    visibility: visible;
+    transform: translateY(0px);
+    display: block;
+  }
+}
+
