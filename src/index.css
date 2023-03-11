@@ -17,7 +17,8 @@
 }
 body {
   background-color: rgb(11 11 11);
-  overflow: hidden;
+  overflow-x: hidden;
+  overflow-y: auto;
   color: rgb(229 231 235);
   font-family: "Montserrat", sans-serif;
   /* letter-spacing: 2px; */
