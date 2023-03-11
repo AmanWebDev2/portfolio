@@ -6,7 +6,7 @@ function RightBar() {
     <div className="sidebar-2 z-50 lg:border-dashed  w-[14%] sm:w-[8%]  lg:w-[5%] lg:border-l fixed top-0 bottom-0 right-0 flex py-5 mr-2 lg:mx-3">
       <div className="container flex flex-col justify-between">
         <div className="logo">
-          <div className="logo-wrapper flex justify-center cursor-pointertext-xs sm:text-sm md:text-base">
+          <div className="logo-wrapper flex justify-center cursor-pointertext-xs sm:text-sm md:text-base lg:text-lg">
             <div className="logo-part">&#x276E;</div>
             <div className="logo-part">AK</div>
             <div className="logo-part">&#x2044;</div>

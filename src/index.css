@@ -366,6 +366,11 @@ h1 {
   animation: 1s ease 0.5s 1 normal forwards running animate-opacity;
   transform: all 1s ease;
 }
+.logo-wrapper{
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-weight: 150;
+  letter-spacing: 2px;
+}
 
 @keyframes animate-opacity {
   0% {
