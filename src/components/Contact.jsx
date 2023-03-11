@@ -7,14 +7,16 @@ import LinkedInSvg from '../assets/SVG/LinkedInSvg'
 import InstaSvg from '../assets/SVG/InstaSvg'
 import MailSvg from '../assets/SVG/MailSvg'
 import PageHeadline from './PageHeadline'
+import Loader from './Loader'
 function Contact() {
   return (
     <>
     <section 
     className='common-seciton lg:w-[80%] text-xs sm:text-sm md:text-base'>
       <div className="wrapper translate-y-[-85px]">
-        <PageHeadline headline="contact us" />
+        {/* <PageHeadline headline="contact us" /> */}
         <div className="container">
+          {/* <Loader/> */}
           <div className="mt-6 mb-3">
             <div className="">
               <div className="sub-title">
@@ -26,7 +28,6 @@ function Contact() {
             <div className="envolpe"></div>
             <div className="info">
               <div className="wrapper px-24">
-              {/*  */}
               <div className="flex flex-col sm:flex-row wrapper">
                 <div className="flex items-center sm:w-52 space-x-2">
                   <div className="-icon">
@@ -41,7 +42,6 @@ function Contact() {
                   <p>+91-9458163496</p>
                 </div>
               </div>
-              {/*  */}
               <div className="flex flex-col sm:flex-row wrapper">
                 <div className="flex items-center sm:w-52  space-x-2">
                   <div className="-icon">
@@ -56,7 +56,6 @@ function Contact() {
                   <p>aman_dev</p>
                 </div>
               </div>
-              {/*  */}
               <div className="flex flex-col wrapper">
                 <div className="flex items-center justify-center sm:w-52 sm:mx-auto sm:pr-8 space-x-2">
                   <div className="-icon">

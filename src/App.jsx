@@ -2,6 +2,7 @@ import { Link, Route, Routes } from 'react-router-dom'
 import React, { Suspense, useEffect, useState } from 'react';
 import './App.css'
 import CustomPointer from './components/CustomPointer'
+import Loader from './components/Loader';
 const Home = React.lazy(()=>import('./components/Home'));
 const About = React.lazy(()=>import('./components/AboutMe'));
 const Hero = React.lazy(()=>import('./components/Hero'));
@@ -36,22 +37,22 @@ function App() {
     {/* <Hero/> */}
     <Routes>
         <Route exact path="/" element={
-          <Suspense fallback={<div>Loading...</div>}>
+          <Suspense fallback={<Loader/>}>
           <Hero/>
           </Suspense>
         }>
           <Route index element={
-             <Suspense fallback={<div>Loading...</div>}>
+             <Suspense fallback={<Loader/>}>
                 <Home/>
              </Suspense>
           } />
           <Route path="contact" element={
-             <Suspense fallback={<div>Loading...</div>}>
+             <Suspense fallback={<Loader/>}>
           <Contact/>
              </Suspense>
           }/>
           <Route path="about" element={
-            <Suspense fallback={<div>Loading...</div>}>
+            <Suspense fallback={<Loader/>}>
           <About/>
           </Suspense>
           }/>
