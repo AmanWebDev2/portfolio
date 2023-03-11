@@ -163,27 +163,6 @@ h1 {
   }
 }
 
-@keyframes imageWaveDesktop {
-  0% {
-    border-bottom-left-radius: 10%;
-    border-bottom-right-radius: 50%;
-    border-top-left-radius: 10%;
-    border-top-right-radius: 50%;
-  }
-  50% {
-    border-bottom-left-radius: 90%;
-    border-bottom-right-radius: 10%;
-    border-top-left-radius: 50%;
-    border-top-right-radius: 10%;
-  }
-  100% {
-    border-bottom-left-radius: 10%;
-    border-bottom-right-radius: 50%;
-    border-top-left-radius: 10%;
-    border-top-right-radius: 50%;
-  }
-}
-
 .animate-border {
   display: block;
   position: absolute;
@@ -594,6 +573,43 @@ h1 {
     animation: 1s cubic-bezier(0.68, -0.55, 0.265, 1.55) 0.5s 1 normal forwards
       running animation-inLg-line;
   }
+  .blurb__bg-img-wrapper{
+    height: 479.232px;
+    animation: 4s ease-in-out 0s infinite normal none running imageWaveDesktop;
+  }
+
+}
+
+@media (min-width:768px)  and (max-width:1024px) {
+  .blurb__bg-img-wrapper{
+    height: 279.232px;
+    width: 30%;
+    animation: 4s ease-in-out 0s infinite normal none running imageWaveMDDesktop;
+  }
+}
+
+
+@keyframes imageWaveDesktop {
+  0%, 100% {
+    opacity: 1;
+    width: 368.64px;
+    border-radius: 70% 30% 72% 28% / 27% 61% 39% 73%;
+}
+
+50% {
+  border-radius: 77% 23% 54% 46% / 40% 38% 62% 60%;
+}
+}
+@keyframes imageWaveMDDesktop {
+  0%, 100% {
+    opacity: 1;
+    width: 270.64px;
+    border-radius: 70% 30% 72% 28% / 27% 61% 39% 73%;
+}
+
+50% {
+  border-radius: 77% 23% 54% 46% / 40% 38% 62% 60%;
+}
 }
 
 @keyframes animation-inXS-line {
