@@ -3,10 +3,34 @@ import React, { Suspense, useEffect, useState } from 'react';
 import './App.css'
 import CustomPointer from './components/CustomPointer'
 import Loader from './components/Loader';
-const Home = React.lazy(()=>import('./components/Home'));
-const About = React.lazy(()=>import('./components/AboutMe'));
-const Hero = React.lazy(()=>import('./components/Hero'));
-const Contact = React.lazy(()=>import('./components/Contact'));
+const Home = React.lazy(()=>{
+  return new Promise(resolve=>{
+    setTimeout(()=>{
+      resolve(import('./components/Home'))
+    },500);
+  })
+});
+const About = React.lazy(()=>{
+  return new Promise(resolve=>{
+    setTimeout(()=>{
+      resolve(import('./components/AboutMe'))
+    },500);
+  })
+});
+const Hero = React.lazy(()=>{
+  return new Promise(resolve=>{
+    setTimeout(()=>{
+      resolve(import('./components/Hero'))
+    },500);
+  })
+});
+const Contact = React.lazy(()=>{
+  return new Promise(resolve=>{
+    setTimeout(()=>{
+      resolve(import('./components/Contact'))
+    },500);
+  })
+});
 function App() {
   const [showPointer,setShowPointer] = useState(()=>window.innerWidth > 500);
 
@@ -18,15 +42,7 @@ function App() {
         setShowPointer(false);
       }
     }
-    const handleScroll=()=>{
-      // if(showPointer) {
-      //   setShowPointer(false);
-      // }else{
-      //   setShowPointer(true);
-      // }
-    }
     window.addEventListener('resize',handleResize);
-    window.addEventListener('scroll',handleScroll);
     return()=>{
       window.removeEventListener('resize',handleResize);
     }

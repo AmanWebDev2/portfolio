@@ -14,7 +14,7 @@ function Contact() {
     <section 
     className='common-seciton lg:w-[80%] text-xs sm:text-sm md:text-base'>
       <div className="wrapper translate-y-[-85px]">
-        {/* <PageHeadline headline="contact us" /> */}
+        <PageHeadline headline="contact us" />
         <div className="container">
           {/* <Loader/> */}
           <div className="mt-6 mb-3">
