@@ -29,7 +29,7 @@ function About() {
             <div className="mt-6 mb-3">
               <div className="">
                 <div className="sub-title">
-                  <p className="">
+                  <p className="about__para">
                     Lorem ipsum, dolor sit amet consectetur adipisicing elit.
                     Perspiciatis nobis animi maiores, voluptatum, ducimus
                     laudantium nemo, aliquid recusandae placeat similique saepe
@@ -38,7 +38,7 @@ function About() {
                     similique obcaecati maiores quas!
                   </p>
                   <br />
-                  <p className="quote">
+                  <p className="quote about__para ">
                     Lorem ipsum dolor sit amet consectetur adipisicing elit.
                     Sint, illum?
                   </p>
@@ -52,8 +52,8 @@ function About() {
                     <EmployeeIcon styles={{ scale: "0.8",color:'#d85c36' }} />
                   </div>
                   <div className="details">
-                    <h3 className="font-medium mb-2">Employees</h3>
-                    <p>2 Heros</p>
+                    <h3 className="font-medium mb-2 text-[#E3D6BE]">Employees</h3>
+                    <p className="text-[#E3D6BE]">2 Heros</p>
                   </div>
                 </div>
                 <div className="general-details md:w-[]">
@@ -61,8 +61,8 @@ function About() {
                     <StarSvg styles={{ scale: "0.8",color:'#d85c36' }} />
                   </div>
                   <div className="details">
-                    <h3 className="font-medium mb-2">Active Projects</h3>
-                    <p>1 project</p>
+                    <h3 className="font-medium mb-2 text-[#E3D6BE]">Active Projects</h3>
+                    <p className="text-[#E3D6BE]">1 project</p>
                   </div>
                 </div>
                 <div className="general-details">
@@ -70,8 +70,8 @@ function About() {
                     <MailSvg styles={{ scale: "0.8",color:'#d85c36' }}/>
                   </div>
                   <div className="details">
-                    <h3 className="font-medium mb-2">Email</h3>
-                    <p className="lowercase">webdevaman2@gmail.com</p>
+                    <h3 className="font-medium mb-2 text-[#E3D6BE]">Email</h3>
+                    <p className="lowercase text-[#E3D6BE]">webdevaman2@gmail.com</p>
                   </div>
                 </div>
                 <div className="general-details">
@@ -79,8 +79,8 @@ function About() {
                     <PhoneSvg styles={{ scale: "0.8",color:'#d85c36' }} />
                   </div>
                   <div className="details">
-                    <h3 className="font-medium mb-2">Phone</h3>
-                    <p>+91 9458163496</p>
+                    <h3 className="font-medium mb-2 text-[#E3D6BE]">Phone</h3>
+                    <p className="text-[#E3D6BE]">+91 9458163496</p>
                   </div>
                 </div>
                 <div className="general-details">
@@ -88,8 +88,8 @@ function About() {
                     <LocationSvg styles={{ scale: "0.8",color:'#d85c36' }} />
                   </div>
                   <div className="details">
-                    <h3 className="font-medium mb-2">Location</h3>
-                    <p>Dehradun,India</p>
+                    <h3 className="font-medium mb-2 text-[#E3D6BE]">Location</h3>
+                    <p className="text-[#E3D6BE]">Dehradun,India</p>
                   </div>
                 </div>
                 <div className="general-details">
@@ -97,8 +97,8 @@ function About() {
                     <CalendarSvg styles={{ scale: "0.8",color:'#d85c36' }} />
                   </div>
                   <div className="details">
-                    <h3 className="font-medium mb-2">Since</h3>
-                    <p>2020</p>
+                    <h3 className="font-medium mb-2 text-[#E3D6BE]">Since</h3>
+                    <p className="text-[#E3D6BE]">2020</p>
                   </div>
                 </div>
               </div>
@@ -112,7 +112,7 @@ function About() {
                     <img src={ReactImg} alt="" srcset="" />
                   </div>
                   <div className="details">
-                    <p>React Js</p>
+                    <p className="about__services">React Js</p>
                   </div>
                 </div>
                 <div className="general-details md:w-[]">
@@ -121,7 +121,7 @@ function About() {
                     <img src={NodeImg} alt="" />
                   </div>
                   <div className="details">
-                    <p>Express Js</p>
+                    <p className="about__services">Express Js</p>
                   </div>
                 </div>
                 <div className="general-details">
@@ -129,7 +129,7 @@ function About() {
                   <MongoDb styles={{scale:'0.8',width:'50px'}}/>
                   </div>
                   <div className="details">
-                    <p>MongoDb</p>
+                    <p className="about__services">MongoDb</p>
                   </div>
                 </div>
                 <div className="general-details">
@@ -137,7 +137,7 @@ function About() {
                     <Sqlite styles={{ scale: "0.8",width:'50px'}} />
                   </div>
                   <div className="details">
-                    <p>MySQL</p>
+                    <p className="about__services">MySQL</p>
                   </div>
                 </div>
                 <div className="general-details service blur-sm	">
@@ -145,7 +145,7 @@ function About() {
                     <SpringBootSvg styles={{ scale: "0.8",width:'50px' }} />
                   </div>
                   <div className="details">
-                    <p>Spring Boot</p>
+                    <p className="about__services">Spring Boot</p>
                   </div>
                 </div>
                 <div className="general-details service">
@@ -153,7 +153,7 @@ function About() {
                     <Tailwind styles={{ scale: "0.8",width:'50px' }} />
                   </div>
                   <div className="details">
-                    <p>Tailwind Css</p>
+                    <p className="about__services">Tailwind Css</p>
                   </div>
                 </div>
               </div>
@@ -167,8 +167,8 @@ function About() {
                     <img src={ReactImg} alt="" srcset="" />
                   </div>
                   <div className="details">
-                    <h3 className="font-bold mb-4">Front-End Development</h3>
-                    <p>
+                    <h3 className="font-bold mb-4 about__services">Front-End Development</h3>
+                    <p className="about__services">
                       Using the world's latest technologies of the day for your
                       product's client side, such as React.Js or Next.Js
                     </p>
@@ -179,8 +179,8 @@ function About() {
                     <CodeSvg/>
                   </div>
                   <div className="details">
-                    <h3 className="font-bold mb-4">Back-End Development</h3>
-                    <p>
+                    <h3 className="font-bold mb-4 about__services">Back-End Development</h3>
+                    <p className="about__services">
                       Using the world's latest technologies of the day for your
                       product's server side, such as Node.Js.
                     </p>

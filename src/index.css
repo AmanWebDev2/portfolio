@@ -473,3 +473,19 @@ h1 {
     transform: translateY(-4.3584px) rotate(-45deg);
   }
 }
+
+.about__para {
+  text-align: justify;
+  hyphens: auto;
+  word-spacing: -0.05em;
+  color: rgb(227, 214, 190);
+  animation: 1s ease 0.5s 1 normal forwards running animation-in-desc-about;
+  font-weight: 400;
+  padding: 1.944px 5.0544px;
+  margin-bottom: 0px;
+  margin-top: 5.832px;
+}
+
+.about__services {
+  color: #E3D6BE;
+}
