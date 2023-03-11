@@ -140,7 +140,7 @@ function About() {
                     <p>MySQL</p>
                   </div>
                 </div>
-                <div className="general-details blur-sm	">
+                <div className="general-details service blur-sm	">
                   <div className="detail-icon">
                     <SpringBootSvg styles={{ scale: "0.8",width:'50px' }} />
                   </div>
@@ -148,7 +148,7 @@ function About() {
                     <p>Spring Boot</p>
                   </div>
                 </div>
-                <div className="general-details">
+                <div className="general-details service">
                   <div className="detail-icon">
                     <Tailwind styles={{ scale: "0.8",width:'50px' }} />
                   </div>
@@ -162,7 +162,7 @@ function About() {
             <PageHeadline headline="services" />
             <div className="wrapper mt-10 mb-28">
               <div className="service general-details-wrapper">
-                <div className="general-details h-[170px] md:h-[210px]">
+                <div className="service__detail general-details">
                   <div className="detail-icon">
                     <img src={ReactImg} alt="" srcset="" />
                   </div>
@@ -174,7 +174,7 @@ function About() {
                     </p>
                   </div>
                 </div>
-                <div className="general-details h-[170px] md:h-[210px]">
+                <div className="service__detail general-details">
                   <div className="detail-icon">
                     <CodeSvg/>
                   </div>
