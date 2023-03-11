@@ -4,27 +4,31 @@ import React, { Suspense } from "react";
 // import RightBar from "./RightBar";
 import { Outlet } from "react-router-dom";
 
-const MobileNav = React.lazy(()=>import('./MobileNav'));
-const LeftBar = React.lazy(()=>import('./LeftBar'));
-const RightBar = React.lazy(()=>import('./RightBar'));
- 
+const MobileNav = React.lazy(() => import("./MobileNav"));
+const LeftBar = React.lazy(() => import("./LeftBar"));
+const RightBar = React.lazy(() => import("./RightBar"));
+
 function Hero() {
   return (
     <>
-        <div className="flex items-center justify-items-center max-w-full" style={{height:'calc(100vh - 42px)'}}>
+      <div
+        className="flex items-center justify-items-center max-w-full"
+        style={{ height: "calc(100vh - 42px)" }}
+      >
         <Suspense fallback={<div>Loading...</div>}>
           <LeftBar />
         </Suspense>
-          <Outlet/>
 
-          <Suspense fallback={<div>Loading...</div>}>
+        <Outlet />
+
+        <Suspense fallback={<div>Loading...</div>}>
           <RightBar />
-          </Suspense>
+        </Suspense>
 
-          <Suspense fallback={<div>Loading...</div>}>
+        <Suspense fallback={<div>Loading...</div>}>
           <MobileNav />
-          </Suspense>
-        </div>
+        </Suspense>
+      </div>
     </>
   );
 }

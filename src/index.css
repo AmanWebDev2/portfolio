@@ -490,9 +490,53 @@ h1 {
   color: #e3d6be;
 }
 
-.about__para-info::first-letter,.contact__title::first-letter {
+.about__para-info::first-letter,.contact__title::first-letter,.home__info::first-letter {
   color: rgb(216, 92, 54);
   font-size: 22px;
   font-weight: 700;
   text-transform: uppercase;
 }
+
+.home__info{
+  text-align: justify;
+  hyphens: auto;
+  color: rgb(227, 214, 190);
+  word-spacing: -0.05em;
+  margin-bottom: 0px;
+  margin-top: 5.832px;
+  font-weight: 400;
+}
+
+.home__btn {
+  background-color: rgb(11, 11, 11);
+  color: rgb(227, 214, 190);
+}
+
+.home__line {
+  animation: 1s cubic-bezier(0.68, -0.55, 0.265, 1.55) 0.5s 1 normal forwards running animation-inXS-line;
+}
+
+@media all and (min-width:1024px) {
+  .home__line {
+    animation: 1s cubic-bezier(0.68, -0.55, 0.265, 1.55) 0.5s 1 normal forwards running animation-inLg-line; ;
+  }
+}
+
+@keyframes animation-inXS-line {
+  0% {
+    width: 0px;
+  }
+  100% {
+    width: 180px;
+  }
+}
+
+@keyframes animation-inLg-line {
+  0% {
+    width: 0px;
+  }
+  100% {
+    width: 1/2;
+  }
+}
+

@@ -4,9 +4,7 @@ import { Link } from "react-router-dom";
 function Home() {
   return (
     <>
-      <section
-        className="common-seciton lg:w-[80%]"
-      >
+      <section className="common-seciton lg:w-[80%]">
         <div className="container flex flex-col-reverse md:flex-row">
           <div className="left flex-1 text-xs sm:text-sm md:text-base xl:flex-[1.3]">
             <div className="leading-8">
@@ -25,9 +23,9 @@ function Home() {
                 &nbsp;Developer
               </h1>
             </div>
-            <div className="h-[1px] lg:h-1 mt-4 bg-[#D85C36] w-1/2 lg:w-4/6"></div>
+            <div className="h-[1px] lg:h-1 mt-4 bg-[#D85C36] w-1/2 lg:w-4/6 home__line"></div>
             <div className="text-gray-300 mt-3 lg:mt-4">
-              <p>
+              <p className="home__info">
                 Lorem ipsum dolor sit amet consectetur, adipisicing elit.
                 Inventore laboriosam dignissimos eos rem labore velit sit fuga
                 fugit quam ut. Dolores animi consequatur tempore alias unde
@@ -38,7 +36,7 @@ function Home() {
             <div className="">
               <div className="btn-wrapper text-gray-300 flex space-x-4 my-9">
                 <Link to="/about">
-                  <div className="btn-1 py-2  border border-[#D85C36] w-28  md:w-40 text-center cursor-pointer  rounded-lg">
+                  <div className="btn-1 home__btn py-2  border border-[#D85C36] w-28  md:w-40 text-center cursor-pointer  rounded-lg">
                     <button className="">
                       <span className="animate-border"></span>
                       <span>More About Me</span>
@@ -46,7 +44,7 @@ function Home() {
                   </div>
                 </Link>
                 <Link to="/contact">
-                  <div className="btn-2 py-2 border border-[#D85C36] w-28 md:w-40 text-center rounded-lg cursor-pointer">
+                  <div className="btn-2 home__btn py-2 border border-[#D85C36] w-28 md:w-40 text-center rounded-lg cursor-pointer">
                     <button className="relative">
                       <span className="animate-border-2"></span>
                       <span>Contact Us</span>
