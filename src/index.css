@@ -490,14 +490,16 @@ h1 {
   color: #e3d6be;
 }
 
-.about__para-info::first-letter,.contact__title::first-letter,.home__info::first-letter {
+.about__para-info::first-letter,
+.contact__title::first-letter,
+.home__info::first-letter {
   color: rgb(216, 92, 54);
   font-size: 22px;
   font-weight: 700;
   text-transform: uppercase;
 }
 
-.home__info{
+.home__info {
   text-align: justify;
   hyphens: auto;
   color: rgb(227, 214, 190);
@@ -505,6 +507,8 @@ h1 {
   margin-bottom: 0px;
   margin-top: 5.832px;
   font-weight: 400;
+  visibility: hidden;
+  animation: 1s ease 0.2s 1 normal forwards running animation-in-desc-md;
 }
 
 .home__btn {
@@ -513,12 +517,15 @@ h1 {
 }
 
 .home__line {
-  animation: 1s cubic-bezier(0.68, -0.55, 0.265, 1.55) 0.5s 1 normal forwards running animation-inXS-line;
+  width: 0px;
+  animation: 1s cubic-bezier(0.68, -0.55, 0.265, 1.55) 0.5s 1 normal forwards
+    running animation-inXS-line;
 }
 
-@media all and (min-width:1024px) {
+@media all and (min-width: 1024px) {
   .home__line {
-    animation: 1s cubic-bezier(0.68, -0.55, 0.265, 1.55) 0.5s 1 normal forwards running animation-inLg-line; ;
+    animation: 1s cubic-bezier(0.68, -0.55, 0.265, 1.55) 0.5s 1 normal forwards
+      running animation-inLg-line;
   }
 }
 
@@ -531,12 +538,50 @@ h1 {
   }
 }
 
+.home__title {
+  visibility: hidden;
+  animation: 1s ease 0.4s 1 normal forwards running animation-in-subTitleSM;
+}
+
 @keyframes animation-inLg-line {
   0% {
     width: 0px;
   }
   100% {
-    width: 1/2;
+    width:50%;
   }
 }
 
+
+
+@keyframes animation-in-subTitleSM {
+  0% {
+    display: none;
+    visibility: hidden;
+    transform: translateY(60px);
+  }
+  50% {
+    visibility: visible;
+  }
+  100% {
+    visibility: visible;
+    transform: translateY(0px);
+    display: block;
+  }
+}
+
+@keyframes animation-in-desc-md {
+  0% {
+    display: none;
+    visibility: hidden;
+    transform: translateY(300px);
+  }
+  50% {
+    visibility: visible;
+  }
+  100% {
+    visibility: visible;
+    transform: translateY(0px);
+    display: none;
+  }
+}

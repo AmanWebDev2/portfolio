@@ -8,12 +8,12 @@ function Home() {
         <div className="container flex flex-col-reverse md:flex-row">
           <div className="left flex-1 text-xs sm:text-sm md:text-base xl:flex-[1.3]">
             <div className="leading-8">
-              <h1 className="text-xl md:text-2xl lg:text-4xl xl:text-6xl">
+              <h1 className="text-xl md:text-2xl lg:text-4xl xl:text-6xl home__title">
                 Hey, I am a
               </h1>
             </div>
             <div className="">
-              <h1 className="text-xl md:text-2xl lg:text-4xl xl:text-6xl">
+              <h1 className="text-xl md:text-2xl lg:text-4xl xl:text-6xl home__title">
                 <span
                   style={{ color: "rgb(216, 92, 54)" }}
                   className="font-bold"
@@ -23,7 +23,7 @@ function Home() {
                 &nbsp;Developer
               </h1>
             </div>
-            <div className="h-[1px] lg:h-1 mt-4 bg-[#D85C36] w-1/2 lg:w-4/6 home__line"></div>
+            <div className="h-[1px] lg:h-1 mt-4 bg-[#D85C36] home__line"></div>
             <div className="text-gray-300 mt-3 lg:mt-4">
               <p className="home__info">
                 Lorem ipsum dolor sit amet consectetur, adipisicing elit.
