@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,300;0,400;0,500;1,100;1,300;1,500&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Fira+Mono:wght@500&display=swap');
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -361,7 +362,7 @@ h1 {
 
 .general-details {
   width: -webkit-fill-available;
-  width: -moz-available;          /* WebKit-based browsers will ignore this. */
+  width: -moz-available; /* WebKit-based browsers will ignore this. */
   border: 1px solid rgba(165, 161, 161, 0.18);
   height: 110px;
   margin: 0px;
@@ -749,7 +750,7 @@ h1 {
   animation: 3.5s ease 0s infinite normal none running centerCircle;
 }
 
-.loading{
+.loading {
   position: relative;
   top: 170px;
   height: 45px;
@@ -759,28 +760,28 @@ h1 {
 .loader-logo {
   font-size: 40px;
   color: #000000;
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   letter-spacing: 2px;
 }
 
 .loader-container {
   display: flex;
-    height: 100vh;
-    -webkit-box-pack: center;
-    justify-content: center;
-    -webkit-box-align: center;
-    align-items: center;
-    box-sizing: border-box;
-    position: absolute;
-    width: 100vw;
-    top: 0px;
-    left: 0px;
-    overflow: hidden;
-    background-color: rgb(0, 0, 0);
-    z-index: 9999;
+  height: 100vh;
+  -webkit-box-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  align-items: center;
+  box-sizing: border-box;
+  position: absolute;
+  width: 100vw;
+  top: 0px;
+  left: 0px;
+  overflow: hidden;
+  background-color: rgb(0, 0, 0);
+  z-index: 9999;
 }
 
-#slider{
+#slider {
   color: #d85c36;
   font-size: 30px;
   font-weight: 700;
@@ -825,5 +826,58 @@ h1 {
     left: 13%;
     transform: rotate(360deg);
     border-radius: 70% 40% 72% 28% / 27% 69% 39% 83%;
+  }
+}
+.notfound_pg {
+  flex-direction: column;
+}
+.notfound_pg div {
+  transform-style: preserve-3d;
+  font-family: 'Fira Mono', monospace;
+}
+
+.not_found_svg_container svg {
+  width: clamp(300px, 70%, 600px);
+  height: 500px;
+  margin: auto;
+}
+
+#rocket {
+  transform: translateY(750px);
+
+  animation: launch 2s ease-out forwards;
+}
+
+@keyframes launch {
+  from {
+    transform: translateY(750px);
+  }
+  to {
+    perspective: 500px;
+    transform: translateY(0px);
+  }
+}
+#stars {
+  animation: twinkling 2s linear;
+}
+@keyframes twinkling {
+  from {
+    transform: scale(0);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+.text {
+  opacity: 0;
+  animation: appear 1s ease-in forwards;
+  animation-delay: 1.8s;
+}
+@keyframes appear {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
   }
 }
