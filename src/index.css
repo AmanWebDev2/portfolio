@@ -361,6 +361,7 @@ h1 {
 
 .general-details {
   width: -webkit-fill-available;
+  width: -moz-available;          /* WebKit-based browsers will ignore this. */
   border: 1px solid rgba(165, 161, 161, 0.18);
   height: 110px;
   margin: 0px;
