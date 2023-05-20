@@ -270,9 +270,9 @@ const RocketSvg = () => {
         y2="738.768"
         gradientUnits="userSpaceOnUse"
       >
-        <stop stop-color="#E0E0E0" />
-        <stop offset="0.31" stop-color="#FCCC63" />
-        <stop offset="0.77" stop-color="#F55F44" />
+        <stop stopColor="#E0E0E0" />
+        <stop offset="0.31" stopColor="#FCCC63" />
+        <stop offset="0.77" stopColor="#F55F44" />
       </linearGradient>
       <linearGradient
         id="paint1_linear"
@@ -282,9 +282,9 @@ const RocketSvg = () => {
         y2="738.518"
         gradientUnits="userSpaceOnUse"
       >
-        <stop stop-color="#E0E0E0" />
-        <stop offset="0.31" stop-color="#FCCC63" />
-        <stop offset="0.77" stop-color="#F55F44" />
+        <stop stopColor="#E0E0E0" />
+        <stop offset="0.31" stopColor="#FCCC63" />
+        <stop offset="0.77" stopColor="#F55F44" />
       </linearGradient>
       <linearGradient
         id="paint2_linear"
@@ -294,9 +294,9 @@ const RocketSvg = () => {
         y2="738.518"
         gradientUnits="userSpaceOnUse"
       >
-        <stop stop-color="#E0E0E0" />
-        <stop offset="0.31" stop-color="#FCCC63" />
-        <stop offset="0.77" stop-color="#F55F44" />
+        <stop stopColor="#E0E0E0" />
+        <stop offset="0.31" stopColor="#FCCC63" />
+        <stop offset="0.77" stopColor="#F55F44" />
       </linearGradient>
       <linearGradient
         id="paint3_linear"
@@ -306,9 +306,9 @@ const RocketSvg = () => {
         y2="738.518"
         gradientUnits="userSpaceOnUse"
       >
-        <stop stop-color="#E0E0E0" />
-        <stop offset="0.31" stop-color="#FCCC63" />
-        <stop offset="0.77" stop-color="#F55F44" />
+        <stop stopColor="#E0E0E0" />
+        <stop offset="0.31" stopColor="#FCCC63" />
+        <stop offset="0.77" stopColor="#F55F44" />
       </linearGradient>
     </defs>
   </svg>

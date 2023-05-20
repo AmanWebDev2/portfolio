@@ -14,7 +14,6 @@ function LeftBar() {
 
   useEffect(()=>{
     if(location.pathname) {
-      console.log(location.pathname)
       setActivePage(location.pathname.toLowerCase());
     }
   },[location])
