@@ -36,7 +36,7 @@ function LeftBar() {
                 <span className={`${activePage==='/about' && 'active'}`}>About</span>
                 </Link>
                 <Link to='/portfolio'>
-                <span className={`${activePage==='/portfolio' && 'active'}`}>Portfolio</span>
+                <span className={`${activePage==='/portfolio' && 'active'}`}>Projects</span>
                 </Link>
                 <Link to='/contact'>
                 <span className={`${activePage==='/contact' && 'active'}`}>Contact</span>

@@ -1,7 +1,6 @@
-import { Link, Route, Routes } from "react-router-dom";
+import { Route, Routes } from "react-router-dom";
 import React, { Suspense, useEffect, useState } from "react";
 import "./App.css";
-import CustomPointer from "./components/CustomPointer";
 import Loader from "./components/Loader";
 import NotFound from "./components/NotFound";
 const Home = React.lazy(() => {

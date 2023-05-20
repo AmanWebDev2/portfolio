@@ -2,6 +2,7 @@ import React from "react";
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
 import InstaSvg from "../assets/SVG/InstaSvg";
+import ReactSvg from "../assets/tech-icons/ReactSvg";
 import MailSvg from "../assets/SVG/MailSvg";
 import PhoneSvg from "../assets/SVG/PhoneSvg";
 import LocationSvg from "../assets/SVG/LocationSvg";
@@ -18,6 +19,82 @@ import Sqlite from "../assets/tech-icons/Sqlite";
 import NodeJs from "../assets/tech-icons/NodeJs";
 import { SpringBootSvg } from "../assets/tech-icons/SpringBootSvg";
 import Tailwind from "../assets/tech-icons/Tailwind";
+import Card from "./Card";
+import NodeSvg from "../assets/tech-icons/NodeSvg";
+
+const aboutMe = [
+  {
+    icon: <EmployeeIcon styles={{ scale: "0.8", color: "#d85c36" }} />,
+    title: "Employee",
+    para: "1",
+  },
+  {
+    icon: <StarSvg styles={{ scale: "0.8", color: "#d85c36" }} />,
+    title: "Active Projects",
+    para: "1 project",
+  },
+  {
+    icon: <MailSvg styles={{ scale: "0.8", color: "#d85c36" }} />,
+    title: "Email",
+    para: "webdevaman2@gmail.com",
+  },
+  {
+    icon: <PhoneSvg styles={{ scale: "0.8", color: "#d85c36" }} />,
+    title: "Phone",
+    para: "+91 9458163496",
+  },
+  {
+    icon: <LocationSvg styles={{ scale: "0.8", color: "#d85c36" }} />,
+    title: "Location",
+    para: "Dehradun,India",
+  },
+  {
+    icon: <CalendarSvg styles={{ scale: "0.8", color: "#d85c36" }} />,
+    title: "Since",
+    para: "2020",
+  },
+];
+
+const technologies = [
+  {
+    icon: <ReactSvg styles={{ scale: "0.8", color: "#d85c36", width:"50px",height:"50px" }} />,
+    para: "React js",
+  },
+  {
+    icon: <NodeSvg styles={{ scale: "0.8", color: "#d85c36",width: "50px",height:"50px"}} />,
+    para: "Express Js",
+  },
+  {
+    icon: <MongoDb styles={{ scale: "0.8", width: "50px",height:"50px"}} />,
+    para: "MongoDb",
+  },
+  {
+    icon: <Sqlite styles={{ scale: "0.8", width: "50px",height:"50px"}} />,
+    para: "MySQL",
+  },
+  {
+    icon: <SpringBootSvg styles={{ scale: "0.8", width: "50px",height:"50px"}} />,
+    para: "Spring Boot",
+  },
+  {
+    icon: <Tailwind styles={{ scale: "0.8", width: "50px" }} />,
+    para: "Tailwind CSS",
+  },  
+];
+
+const services = [
+  {
+    icon: <ReactSvg styles={{ scale: "0.8", color: "#d85c36", width:"50px",height:"50px" }} classes={"md:scale-150"} />,
+    title: "Front-end Development",
+    para: "Using The World's Latest Technologies Of The Day For Your Product's Client Side, Such As React.Js Or Next.Js "
+  },
+  {
+    icon: <CodeSvg styles={{ scale: "0.8", color: "#d85c36", width:"50px",height:"50px" }} classes={"md:scale-150"} />,
+    title: "Back-end Development",
+    para:"Using the world's latest technologies of the day for your product's server side, such as Node.Js."
+  },
+]
+
 
 function About() {
   return (
@@ -47,145 +124,62 @@ function About() {
             </div>
             <div className="wrapper mb-28 mt-10">
               <div className="general-details-wrapper">
-                <div className="general-details">
-                  <div className="detail-icon">
-                    <EmployeeIcon styles={{ scale: "0.8",color:'#d85c36' }} />
-                  </div>
-                  <div className="details">
-                    <h3 className="font-medium mb-2 text-[#E3D6BE]">Employees</h3>
-                    <p className="text-[#E3D6BE]">2 Heros</p>
-                  </div>
-                </div>
-                <div className="general-details md:w-[]">
-                  <div className="detail-icon">
-                    <StarSvg styles={{ scale: "0.8",color:'#d85c36' }} />
-                  </div>
-                  <div className="details">
-                    <h3 className="font-medium mb-2 text-[#E3D6BE]">Active Projects</h3>
-                    <p className="text-[#E3D6BE]">1 project</p>
-                  </div>
-                </div>
-                <div className="general-details">
-                  <div className="detail-icon">
-                    <MailSvg styles={{ scale: "0.8",color:'#d85c36' }}/>
-                  </div>
-                  <div className="details">
-                    <h3 className="font-medium mb-2 text-[#E3D6BE]">Email</h3>
-                    <p className="lowercase text-[#E3D6BE]">webdevaman2@gmail.com</p>
-                  </div>
-                </div>
-                <div className="general-details">
-                  <div className="detail-icon">
-                    <PhoneSvg styles={{ scale: "0.8",color:'#d85c36' }} />
-                  </div>
-                  <div className="details">
-                    <h3 className="font-medium mb-2 text-[#E3D6BE]">Phone</h3>
-                    <p className="text-[#E3D6BE]">+91 9458163496</p>
-                  </div>
-                </div>
-                <div className="general-details">
-                  <div className="detail-icon">
-                    <LocationSvg styles={{ scale: "0.8",color:'#d85c36' }} />
-                  </div>
-                  <div className="details">
-                    <h3 className="font-medium mb-2 text-[#E3D6BE]">Location</h3>
-                    <p className="text-[#E3D6BE]">Dehradun,India</p>
-                  </div>
-                </div>
-                <div className="general-details">
-                  <div className="detail-icon">
-                    <CalendarSvg styles={{ scale: "0.8",color:'#d85c36' }} />
-                  </div>
-                  <div className="details">
-                    <h3 className="font-medium mb-2 text-[#E3D6BE]">Since</h3>
-                    <p className="text-[#E3D6BE]">2020</p>
-                  </div>
-                </div>
+                {aboutMe.map((me, index) => {
+                  return (
+                    <React.Fragment key={index}>
+                      <Card icon={me.icon} title={me.title} para={me.para} />
+                    </React.Fragment>
+                  );
+                })}
               </div>
             </div>
             {/* Technologies */}
             <PageHeadline headline="technologies" />
             <div className="wrapper mt-10 mb-28">
               <div className="general-details-wrapper">
-                <div className="general-details">
-                  <div className="detail-icon">
-                    <img src={ReactImg} alt="" srcset="" />
-                  </div>
-                  <div className="details">
-                    <p className="about__services">React Js</p>
-                  </div>
-                </div>
-                <div className="general-details md:w-[]">
-                  <div className="detail-icon">
-                    {/* <NodeImg styles={{scale:'0.8'}}/> */}
-                    <img src={NodeImg} alt="" />
-                  </div>
-                  <div className="details">
-                    <p className="about__services">Express Js</p>
-                  </div>
-                </div>
-                <div className="general-details">
-                  <div className="detail-icon">
-                  <MongoDb styles={{scale:'0.8',width:'50px'}}/>
-                  </div>
-                  <div className="details">
-                    <p className="about__services">MongoDb</p>
-                  </div>
-                </div>
-                <div className="general-details">
-                  <div className="detail-icon">
-                    <Sqlite styles={{ scale: "0.8",width:'50px'}} />
-                  </div>
-                  <div className="details">
-                    <p className="about__services">MySQL</p>
-                  </div>
-                </div>
-                <div className="general-details service blur-sm	">
-                  <div className="detail-icon">
-                    <SpringBootSvg styles={{ scale: "0.8",width:'50px' }} />
-                  </div>
-                  <div className="details">
-                    <p className="about__services">Spring Boot</p>
-                  </div>
-                </div>
-                <div className="general-details service">
-                  <div className="detail-icon">
-                    <Tailwind styles={{ scale: "0.8",width:'50px' }} />
-                  </div>
-                  <div className="details">
-                    <p className="about__services">Tailwind Css</p>
-                  </div>
-                </div>
+                 {
+                  technologies.map((tech)=>{
+                    return(
+                      <>
+                      <Card icon={tech.icon} para={tech.para}/>
+                      </>
+                    )
+                  })
+                 }
               </div>
             </div>
             {/* Services */}
             <PageHeadline headline="services" />
             <div className="wrapper mt-10 mb-28">
               <div className="service general-details-wrapper">
-                <div className="service__detail general-details">
+                {/* <div className="service__detail general-details">
                   <div className="detail-icon">
                     <img src={ReactImg} alt="" srcset="" />
                   </div>
                   <div className="details">
-                    <h3 className="font-bold mb-4 about__services">Front-End Development</h3>
+                    <h3 className="font-bold mb-4 about__services">
+                      Front-End Development
+                    </h3>
                     <p className="about__services">
                       Using the world's latest technologies of the day for your
                       product's client side, such as React.Js or Next.Js
                     </p>
                   </div>
-                </div>
-                <div className="service__detail general-details">
-                  <div className="detail-icon">
-                    <CodeSvg/>
-                  </div>
-                  <div className="details">
-                    <h3 className="font-bold mb-4 about__services">Back-End Development</h3>
-                    <p className="about__services">
-                      Using the world's latest technologies of the day for your
-                      product's server side, such as Node.Js.
-                    </p>
-                  </div>
-                </div>
+                </div> */}
+                 {
+                  services.map((service,index)=>{
+                    return(
+                      <React.Fragment key={index}>
+                      <Card
+                        icon={service.icon}
+                        title={service.title}
+                        para={service.para}
+                        classes={"service__detail"}
+                      />
+                      </React.Fragment>
+                    )
+                  })
+                 }
               </div>
             </div>
           </div>
